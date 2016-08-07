@@ -5,8 +5,202 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
+  		<header class="main-header">
+        <div class="container">
+    			<div class="header-logo">
+    				<h2 class="header-logo">DEVICE</h2>
+    			</div><!--header-logo-->
+    			<div class="header-search">
+    				<form action="#" method="get">
+              <button type="submit" name="search"></button>
+    					<input type="text" name="search-text">
+    				</form>
+    			</div><!--header-search-->
+    			<div class="user-block" id="user-block">
+    				<a href="#">Войти</a>
+    			</div><!--user-block-->
+    			<div class="header-right">
+    				<a href="#">Сравнить</a>
+    				<a href="#">Карзина</a>
+    			</div><!--header-right-->
+        
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+  		<!--Меню-->
+  			  <nav class="main-menu" id="main-menu">
+  				  <ul>
+  					  <li>
+  						  <a href="#">Каталог товаров</a>
+  						  <ul class="menu-secondary" id="catalog-menu">
+	  						  <li>
+	  							  <a href="#">Виртуальная реальность</a>
+	  						  </li>
+	  						  <li>
+	  							  <a href="#">Фитнес браслеты</a>
+ 							    </li>
+	 						    <li>
+	  						    <a href="#">Квадракоптеры</a>
+	  						  </li>
+	  						  <li>
+	  							  <a href="#">Моноподы для селфи</a>
+	  						  </li>
+	  						  <li>
+	  							  <a href="#">Умные часы</a>
+	  						  </li>
+	  						  <li>
+	  							  <a href="#">Экшн-камеры</a>
+	  						  </li>
+  						  </ul>
+  					  </li>
+  					  <li>
+  						  <a href="#">Доставка</a>
+  					  </li>
+  					  <li>
+  						  <a href="#">Гарантия</a>
+  					  </li>
+  					  <li>
+  						  <a href="#">Контакты</a>
+  					  </li>
+  				  </ul>
+  			  </nav>
+        </div><!--container-->
+  		</header>
 
+
+      <main class="container">
+  	<!--Слайдер-->
+  		  <article class="slide" id="product-slide">
+  			   <img src="img/product1.png" width="535" height="485" alt="Селфи Палка">
+  			   <div class="product-about">
+  				    <h2>Делай селфи как Бен Стиллер!</h2>
+  				    <p>
+  					     Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+  				    </p>
+  				    <a href="#">Подробнее</a>
+  				    <div class="product-info">
+  						  <div class="characteristic-1">
+  							   <span class="characteristic-value" id="сh-value-1">8,5 м</span><br>
+  							   <span class="characteristic-name" id="ch-name-1">Длинна палки</span>
+  						  </div><!--characteristic-1-->
+  						  <div class="characteristic-2">
+  							   <span class="characteristic-value" id="сh-value-2">5 кг</span><br>
+  							   <span class="characteristic-name" id="ch-name-2">Вес палки</span>
+  						  </div><!--characteristic-2-->
+  						  <div class="characteristic-3">
+  							   <span class="characteristic-value" id="сh-value-3">Карбон</span><br>
+  							   <span class="characteristic-name" id="ch-name-3">Материал</span>
+  						  </div><!--characteristic-3-->
+  				    </div><!--product-info-->
+  			   </div><!--product-about-->
+  		  </article>
+  		
+
+  	<!--Популярно-->
+  		  <div class="popular">
+  			  <div class="popular-item">
+  				  <img src="img/icon/virtual-real.jpg" width="160" height="160" alt="Виртуальная реальность">
+  				  <a href="#">Виртуальная реальность</a>
+  			  </div>
+  			  <div class="popular-item">
+  				  <img src="img/icon/monopad.jpg" width="160" height="160" alt="Монопады для селфи">
+  				  <a href="#">Монопады для селви</a>
+  			  </div>
+  			  <div class="popular-item">
+  				  <img src="img/icon/camera.jpg" width="160" height="160" alt="Экшн-камеры">
+  				  <a href="#">Экшн-камеры</a>
+  			  </div>
+  			  <div class="popular-item">
+  				  <img src="img/icon/fitnes-bracelet.jpg" width="160" height="160" alt="Фитнес браслеты">
+  				  <a href="#">Фитнес браслеты</a>
+  			  </div>
+  			  <div class="popular-item">
+  				  <img src="img/icon/smart-watch.jpg" width="160" height="160" alt="Умные часы">
+  				  <a href="#">Умные часы</a>
+  			  </div>
+  			  <div class="popular-item">
+  				  <img src="img/icon/kvadrakpter.jpg" width="160" height="160" alt="Квадракопетры">
+  				  <a href="#">Квадракопетры</a>
+  			  </div>
+  		  </div><!--popular-->
+    
+  	<!--Логотипы-->
+  		  <div class="logotypes">
+  			  <img src="imh/logotypes/logo1.png" width="280" height="150" alt="DJI">
+  			  <img src="imh/logotypes/logo2.png" width="280" height="150" alt="SP Gadgets">
+  			  <img src="imh/logotypes/logo3.png" width="280" height="150" alt="GoPro">
+  			 <img src="imh/logotypes/logo4.png" width="280" height="150" alt="VIVI">
+  		  </div>
+
+
+
+  	<!--Информация-->
+  		  <div class="info">
+  			  <!--О нас-->
+  			  <div class="info-abiut-us">
+  				  <h2>О нас</h2>
+  				  <p>
+  				  	Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+  				  </p>
+  				  <p>
+  				  	Мы можем доставить ваш товар в самые   отдаленные точки России! Device работает со многими транспортными компаниями:
+  				  </p>
+  				  <ul>
+  				  	<li>Деловые линии</li>
+  				  	<li>Автотрейдинг</li>
+  				  	<li>ЖелДорЭкспедиция</li>
+  				  </ul>
+  				  <a href="#">Подробнее о нас</a>
+  			  </div>
+  			
+  			<!--Контакты-->
+  			  <div class="info-contact">
+  			  	<h2>Контакты</h2>
+  				  <p>
+  				  	Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бвает.
+  				  </p>
+  				  <img src="img/map.jpg" width="560" height="220" alt="Карта"><!--ПОКА НЕ ЗНАЮ КАК КАРТЫ ВСТАВЛЯТЬ-->
+  				  <a href="#">Напишите нам</a>
+  			  </div>
+  		  </div>
+      </main>
+
+      <footer class="container">
+        <div class="footer-top">
+          <h2 class="footer-logo">DEVICE</h2>
+
+          <div class="footer-right">
+            <div class="user-block">
+              <a href="#">Войти</a>
+            </div>
+            <a href="#">Сравнить</a>
+            <a href="#">Карзина</a>
+          </div>
+        </div>
+        <div class="footer-average">
+          <p>
+            г. Москва, ул. Строителей, 15
+          </p>
+          <nav class="nav-footer">
+            <ul>
+              <li>
+                <a href="#">Доставка</a>
+              </li>
+              <li>
+                <a href="#">Гарантия</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <p>
+            Тел.: +7(495) 495-95-95
+          </p>
+        </div>      
+        <div class="socials">
+          <a href="#" class="href-fc"></a>
+          <a href="#" class="href-insta"></a>
+          <a href="#" class="href-twitter"></a>
+        </div>
+      </footer>
   </body>
 </html>
