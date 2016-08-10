@@ -12,16 +12,27 @@
               </div>
               <div class="header-search" id="search">
                   <form action="#" method="get">
-                      <button type="submit" name="search"></button>
+                      <button type="submit" name="search">
+                          <img src="img/search.png" width="16" height="16" alt="Поиск">
+                      </button>
                       <input type="text" name="search-text" placeholder="Поиск по сайту">
                   </form>
               </div>
               <div class="user-block" id="user-block">
-                  <a href="#">Войти</a>
+                  <a href="#">
+                      <img src="img/user.png" width="16" height="16" alt="User">
+                      Войти
+                  </a>
               </div>
               <div class="header-right">
-                  <a href="#">Сравнить</a>
-                  <a href="#">Карзина</a>
+                  <a href="#">
+                      <img src="img/compare.png" width="16" height="16" alt="User">
+                      Сравнить
+                  </a>
+                  <a href="#">
+                      <img src="img/cart.png" width="16" height="16" alt="User">
+                      Карзина
+                  </a>
               </div>
         
 
@@ -29,7 +40,10 @@
               <nav class="main-menu" id="main-menu">
                   <ul>
                       <li>
-                          <a href="#">Каталог товаров</a>
+                          <a href="#">
+                              Каталог товаров
+                              <img src="img/plus.png" width="16" height="16" alt="User">
+                          </a>
                           <ul class="menu-secondary" id="catalog-menu">
                               <li><a href="#">Виртуальная реальность</a></li>
                               <li><a href="#">Фитнес браслеты</a></li>
@@ -52,11 +66,13 @@
         <!--Карта сайта-->
           <div class="site-map" id="site-map">
               <h2>Монопады для селфи</h2>
-              <a href="http://main/">Главная</a>
-              >
-              <a href="http://catalog/">Каталог товаров</a>
-              >
-              <a href="http://catalog/monopad/">Монопады для селфи</a>
+              <div class="breadcrumbs">
+                  <ul>
+                      <li><a href="#">Главная</a></li>
+                      <li><a href="#">Каталог товаров</a></li>
+                      <li><a href="#">Монопады для селфи</a></li>
+                  </ul>
+              </div>
           </div>
 
         <!--Настройки фильтров-->
@@ -70,7 +86,6 @@
                           <h3>Стоимость</h3>
                           <input type="range" min="0" max="8000" step="500" value="5000" id="cost">
                       </section>
-                      <br>
                       <section class="filter-color" id="color-settings">
                           <hr>
                           <h3>Цвет</h3>
@@ -78,22 +93,18 @@
                               <input type="checkbox" id="color-Black" value="black" checked>
                               Черный
                           </label>
-                          <br>
                           <label>
                               <input type="checkbox" id="color-white" value="white">
                               Белый
                           </label>
-                          <br>
                           <label>
                               <input type="checkbox" id="color-blue" value="blue" checked>
                               Синий
                           </label>
-                          <br>
                           <label>
                               <input type="checkbox" id="color-red" value="red" checked>
                               Красный
                           </label>
-                          <br>
                           <label>
                               <input type="checkbox" id="color-pink" value="pink">
                               Розовый
@@ -111,7 +122,7 @@
                               Нет
                           </label>
                       </section><!--filter-bluetooth-->
-                      <button type="Submit">Показать</button>
+                      <a href="#"><button type="Submit">Показать</button></a>
                   </form>
               </div><!--catalog-left-->
 
@@ -120,51 +131,51 @@
                   <div class="list-top">
                       <h2>Сортировка:</h2>
                       <div class="parametr">
-                          <form action="#" method="post">
-                              <button type="button" name="by-price">По цене</button>
-                              <button type="button" name="by-type">По типу</button>
-                              <button type="button" name="by-popularity">По популярности</button>
-                          </form>
+                          <ul>
+                              <li><a href="#">По цене</a></li>
+                              <li><a href="#">По типу</a></li>
+                              <li><a href="#">По популярности</a></li>
+                          </ul>
                       </div>
                       <div class="sorting">
-                          <form action="#" method="post">
-                              <button type="button" name="descending"></button>
-                              <button type="button" name="Ascending"></button>
-                          </form>
+                          <ul>
+                              <li><a href="#">По возрастанию</a></li>
+                              <li><a href="#">ПО убыванию</a></li>
+                          </ul>
                       </div>
                   </div><!--list-top-->
                   <div class="list">
                       <div class="list-item">
-                          <img src="#" width="360" height="380" alt="Любительская селфи-палка">
+                          <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                           <div class="list-name-product">
-                              <p>Любительская селфи-палка</p>
+                              <a href="#"><p>Любительская селфи-палка</p></a>
                           </div>
                           <div class="list-cast-product">
                               <p>500 руб.</p>
                           </div>
                       </div>
                       <div class="list-item">
-                          <img src="#" width="360" height="380" alt="Профессиональная селфи-палка">
+                          <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                           <div class="list-name-product">
-                              <p>Профессиональная селфи-палка</p>
+                              <a href="#"><p>Профессиональная селфи-палка</p></a>
                           </div>
                           <div class="list-cast-product">
                               <p>1 500 руб.</p>
                           </div>
                       </div>
                       <div class="list-item">
-                          <img src="#" width="360" height="380" alt="Непотопляемая селфи-палка">
+                          <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                           <div class="list-name-product">
-                              <p>Непотопляемая селфи-палка</p>
+                              <a href="#"><p>Непотопляемая селфи-палка</p></a>
                           </div>
                           <div class="list-cast-product">
                               <p>2 500 руб.</p>
                           </div>
                       </div>
                       <div class="list-item">
-                          <img src="#" width="360" height="380" alt="Селфи-палка следуй за мной">
+                          <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка следуй за мной">
                           <div class="list-name-product">
-                              <p>Селфи-палка "следуй за мной"</p>
+                              <a href="#"><p>Селфи-палка "следуй за мной"</p></a>
                           </div>
                           <div class="list-cast-product">
                               <p>500 руб.</p>
@@ -176,9 +187,11 @@
                           <a href="#">Назад</a>
                       </div>
                       <div class="list-page">
-                         <a href="#">1</a>
-                         <a href="#">2</a>
-                         <a href="#">3</a>
+                          <ul>
+                              <li><a href="#">1</a></li>
+                              <li><a href="#">2</a></li>
+                              <li><a href="#">3</a></li>
+                          </ul>
                       </div>
                       <div class="list-next">
                           <a href="#">Вперед</a>
@@ -194,10 +207,19 @@
               <h2 class="footer-logo">DEVICE</h2>
               <div class="footer-right">
                   <div class="user-block">
-                      <a href="#">Войти</a>
+                      <a href="#">
+                          <img src="img/user-yellow.png" width="16" height="16" alt="Поиск">
+                          Войти
+                      </a>
                   </div>
-                  <a href="#">Сравнить</a>
-                  <a href="#">Карзина</a>
+                  <a href="#">
+                      <img src="img/compare-yellow.png" width="16" height="16" alt="Поиск">
+                      Сравнить
+                  </a>
+                  <a href="#">
+                      <img src="img/cart-yellow.png" width="16" height="16" alt="Поиск">
+                      Карзина
+                  </a>
               </div>
           </div>
           <div class="footer-average">
@@ -216,9 +238,18 @@
               </p>
           </div>      
           <div class="socials">
-              <a href="#" class="href-fc"></a>
-              <a href="#" class="href-insta"></a>
-              <a href="#" class="href-twitter"></a>
+              <a href="#" class="href-fc">
+                  <img src="img/facebook.png" width="39" height="38" alt="facebook">
+              </a>
+              <a href="#" class="href-insta">
+                  <img src="img/insta.png" width="39" height="38" alt="insta">
+              </a>
+              <a href="#" class="href-twitter">
+                  <img src="img/twitter.png" width="39" height="38" alt="twitter">
+              </a>
+          </div>
+          <div class="htmlacademy-logo">
+              <img src="img/htmlacademy.png" width="27" height="34" alt="HtmlAcademyы">
           </div>
       </footer>
   </body>
