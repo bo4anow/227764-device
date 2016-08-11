@@ -1,0 +1,35 @@
+@font-face {
+	font-family: Open Sans; 
+	src: local("OpenSans"),
+	url("fonts/opensans.woff");
+} 
+@font-face {
+	font-family: Open Sans light; 
+	src: local("Open Sans light"),
+	url("fonts/opensanslight.woff");
+} 
+@font-face {
+	font-family: Gilroy Light; 
+	src: local("Gilroy Light"),
+	url("fonts/gilroylight.woff");
+} 
+@font-face {
+	font-family: Gilroy Extra bold; 
+	src: local("Gilroy Light"),
+	url("fonts/gilroyextrabold.woff");
+} 
+
+body {
+	color: #464646;
+	font-size: 15px;
+	font-style: normal;
+	line-height: 2;
+	font-family: Open Sans light, Tahoma, Sans;
+	
+}
+
+h1 {
+	color: black;
+	font-size: 45px;
+	font-family: Gilroy Extra bold, Tahoma, Sans;
+}
