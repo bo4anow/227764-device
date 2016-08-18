@@ -120,13 +120,24 @@ h1 {
 }
 
 .popular {
-	background-color: #d0b553;
 	margin-bottom: 80px;
 }
 
 .popular-item {
-	display: inline-block;
+	float: left;
+	width: 160px;
 	margin-right: 40px;
+}
+
+.popular-item:nth-last-child(1) {
+	float: right;
+	margin-right: 0px;
+}
+
+.popular-img {
+	width: 160px;
+	height: 160px;
+	background-color: #f7e296;
 }
 
 .service-slider {
