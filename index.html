@@ -2,14 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
   		<div class="container">
   		    <div class="header-logo">
-	    				<span class="header-logo">DEVICE</span>
-	    	  </div>
+	    		<span>DEVICE</span>
+	    	</div>
           <header class="header clearfix">
   				    <div class="header-left">
 	    			      <div class="header-search" id="search">
@@ -35,23 +36,26 @@
                   </nav>
               </div>
               <div class="header-right">
-                  <div class="user-block" id="user-block">
-                      <a href="#">
-                          <img src="img/user.png" width="16" height="16" alt="User">Войти
-                      </a>
-                  </div>
-                  <div class="report">
-                      <a href="#" class="compare">
-                          <img src="img/compare.png" width="16" height="16" alt="User">
-                          Сравнить
-                      </a>
-                      <a href="#" class="basket">
-                          <img src="img/cart.png" width="16" height="16" alt="User">
-                          Карзина
-                      </a>
+                  <div class="header-right-top clearfix">
+                      <div class="user-block" id="user-block">
+                          <a href="#">
+                              <img src="img/user.png" width="16" height="16" alt="User">
+                              <span>Войти</span>
+                          </a>
+                      </div>
+                      <div class="report">
+                          <a href="#" class="compare">
+                              <img src="img/compare.png" width="16" height="16" alt="User">
+                              Сравнить
+                          </a>
+                          <a href="#" class="basket">
+                              <img src="img/cart.png" width="16" height="16" alt="User">
+                              Карзина
+                          </a>
+                      </div>
                   </div>
                   <nav class="main-menu" id="main-menu">
-                      <ul>
+                      <ul class="clearfix">
                           <li><a href="#">Доставка</a></li>
                           <li><a href="#">Гарантия</a></li>
                           <li><a href="#">Контакты</a></li>
@@ -64,7 +68,7 @@
 
       <main class="main">
 
-  		    <article class="slide content" id="slider">
+  		    <article class="slide content clearfix" id="slider">
               <img src="img/selfies-stick.png" width="384" height="486" alt="Селфи Палка">
               <div class="product-about">
                   <h2>Делай селфи как Бен Стиллер!</h2>
@@ -93,7 +97,7 @@
               <div class="popular-item">
                   <a href="#">
                       <div class="popular-img">
-                          <img src="img/popular-1.1.png" width="160" height="160" alt="Виртуальная реальность">
+                          <img src="img/popular-1.png" width="160" height="160" alt="Виртуальная реальность">
                       </div>
                       <p>Виртуальная реальность</p>
   				        </a>
@@ -101,7 +105,7 @@
               <div class="popular-item">
                   <a href="#">
                       <div class="popular-img">
-                          <img src="img/popular-2.png" width="86" height="117" alt="Монопады для селфи">
+                          <img src="img/popular-2.png" width="160" height="160" alt="Монопады для селфи">
                       </div>
                       <p>Монопады для селви</p>
                   </a>
@@ -109,7 +113,7 @@
               <div class="popular-item">
                   <a href="#">
                       <div class="popular-img">
-                          <img src="img/popular-3.png" width="71" height="87" alt="Экшн-камеры">
+                          <img src="img/popular-3.png" width="160" height="160" alt="Экшн-камеры">
                       </div>
                       <p>Экшн-камеры</p>
                   </a>
@@ -117,7 +121,7 @@
               <div class="popular-item">
                   <a href="#">
                       <div class="popular-img">
-                          <img src="img/popular-4.png" width="107" height="65" alt="Фитнес браслеты">
+                          <img src="img/popular-4.png" width="160" height="160" alt="Фитнес браслеты">
                       </div>
                       <p>Фитнес браслеты</p>
                   </a>
@@ -125,7 +129,7 @@
               <div class="popular-item">
                   <a href="#">
                       <div class="popular-img">
-                          <img src="img/popular-5.png" width="56" height="98" alt="Умные часы">
+                          <img src="img/popular-5.png" width="160" height="160" alt="Умные часы">
                       </div>
                       <p>Умные часы</p>
                   </a>
@@ -133,7 +137,7 @@
               <div class="popular-item">
                   <a href="#">
                       <div class="popular-img">
-                          <img src="img/popular-6.png" width="132" height="69" alt="Квадракопетры">
+                          <img src="img/popular-6.png" width="160" height="160" alt="Квадракопетры">
                       </div>
                       <p>Квадракопетры</p>
                   </a>
@@ -142,9 +146,9 @@
     	
     		  <div class="service-slider content clearfix">
         			<div class="service-slider-tab">
-          				<button class="btn" type="button" name="delivery">Доставка</button>
-          				<button class="btn" type="button" name="guarantee">Гарантия</button>
-          				<button class="btn" type="button" name="credit">Кредит</button>
+          				<div class="btn">Доставка</div>
+          				<div class="btn">Гарантия</div>
+          				<div class="btn">Кредит</div>
         			</div>
         			<div class="servise-slider-slide">
           				<div class="slide-txt">
@@ -154,7 +158,7 @@
             					</p>
           				</div>
           				<img src="img/delivery.png" width="136" height="164" alt="Доставка">
-              </div>
+                    </div>
     		  </div>
 
     		  <div class="decorat-block">
@@ -184,19 +188,19 @@
                   <a href="#">Подробнее о нас</a>
     			    </div>
     			    <div class="info-contact">
-                  <h2>Контакты</h2>
-                  <p>
-                      Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бвает.
-                  </p>
-                  <a href="#">
-                      <img src="img/map.jpg" width="560" height="220" alt="Карта">
-                  </a>
-                  <a href="#">Напишите нам</a>
+                      <h2>Контакты</h2>
+                      <p>
+                          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бвает.
+                      </p>
+                      <a href="#">
+                          <img src="img/map.jpg" width="560" height="220" alt="Карта">
+                      </a>
+                      <a href="#">Напишите нам</a>
     			    </div>
   		    </div>
       </main>
 
-      <footer class="footer">
+      <footer class="footer clearfix">
           <div class="footer-top container clearfix">
               <span class="footer-logo">DEVICE</span>
               <div class="footer-right">
@@ -234,15 +238,15 @@
           <div class="footer-bottom container clearfix">
             	<div class="footer-decorative-left">
             	</div>  
-	            <div class="socials container">
-	                <a href="#" class="href-fc">
-	              	    <img src="img/facebook.png" width="39" height="38" alt="facebook">
+	            <div class="social">
+	                <a href="http://facebook.com">
+                        <div class="facebook social-icon"></div>
 	                </a>
-	                <a href="#" class="href-insta">
-	              	    <img src="img/insta.png" width="39" height="38" alt="insta">
+	                <a href="#">
+	              	    <div class="insta social-icon"></div>
 	                </a>
-	                <a href="#" class="href-twitter">
-	              	    <img src="img/twitter.png" width="39" height="38" alt="twitter">
+	                <a href="#">
+	              	    <div class="twitter social-icon"></div>
 	                </a>
 	            </div>
 	            <div class="htmlacademy-logo">

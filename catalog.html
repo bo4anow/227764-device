@@ -66,14 +66,16 @@
 
       <main class="main">
         <!--Карта сайта-->
-          <div class="site-map align-container" id="site-map">
-              <h1>Монопады для селфи</h1>
-              <div class="breadcrumbs">
-                  <ul>
-                      <li><a href="#">Главная</a></li>
-                      <li><a href="#">Каталог товаров</a></li>
-                      <li><a href="#">Монопады для селфи</a></li>
-                  </ul>
+          <div class="container">
+              <div class="site-map align-container" id="site-map">
+                  <h1>Монопады для селфи</h1>
+                  <div class="breadcrumbs">
+                      <ul>
+                          <li><a href="#">Главная</a></li>
+                          <li><a href="#">Каталог товаров</a></li>
+                          <li><a href="#">Монопады для селфи</a></li>
+                      </ul>
+                  </div>
               </div>
           </div>
 
@@ -84,12 +86,12 @@
                       <h2>Фильтр:</h2>
                       <form action="#" method="post">
                           <br>
-                          <section class="filter-cost" id="cost-settings">
+                          <div class="filter-cost" id="cost-settings">
                               <hr>
                               <h3>Стоимость</h3>
                               <input type="range" min="0" max="8000" step="500" value="5000" id="cost">
-                          </section>
-                          <section class="filter-color" id="color-settings">
+                          </div>
+                          <div class="filter-color" id="color-settings">
                               <hr>
                               <h3>Цвет</h3>
                               <label>
@@ -112,8 +114,8 @@
                                   <input type="checkbox" id="color-pink" value="pink">
                                   Розовый
                               </label>
-                          </section><!--filter-color-->
-                          <section class="filter-bluetooth">
+                          </div><!--filter-color-->
+                          <div class="filter-bluetooth">
                               <hr>
                               <h3>Bluetooth</h3>
                               <label>
@@ -124,7 +126,7 @@
                                   <input type="radio" id="no" value="no">
                                   Нет
                               </label>
-                          </section><!--filter-bluetooth-->
+                          </div><!--filter-bluetooth-->
                           <button type="Submit">Показать</button>
                       </form>
                   </div><!--catalog-left-->
@@ -206,59 +208,59 @@
       </main>
 
     <!--footer-->  
-       <footer class="footer">
-            <div class="footer-top container clearfix">
-                <span class="footer-logo">DEVICE</span>
-                <div class="footer-right">
-                    <div class="user-block">
-                        <a href="#">
-                            <img src="img/user-yellow.png" width="16" height="16" alt="Поиск">
-                          Войти
-                        </a>
-                    </div>
-                    <a href="#">
-                        <img src="img/compare-yellow.png" width="16" height="16" alt="Поиск">
-                        Сравнить
-                    </a>
-                    <a href="#">
-                        <img src="img/cart-yellow.png" width="16" height="16" alt="Поиск">
-                        Карзина
-                    </a>
-                </div>
-            </div>
-            <div class="footer-average container clearfix">
-                <p class="footer-adress">
-                    г. Москва, ул. Строителей, 15
-                </p>
-                <nav class="nav-footer">
-                    <ul>
-                        <li><a href="#">Доставка</a></li>
-                        <li><a href="#">Гарантия</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>
-                </nav>
-                <p class="footer-telephone">
-                    Тел.: +7(495) 495-95-95
-                </p>
-            </div>
-            <div class="footer-bottom container clearfix">
-              <div class="footer-decorative-left">
-              </div>  
-              <div class="socials container">
-                  <a href="#" class="href-fc">
-                      <img src="img/facebook.png" width="39" height="38" alt="facebook">
+      <footer class="footer clearfix">
+          <div class="footer-top container clearfix">
+              <span class="footer-logo">DEVICE</span>
+              <div class="footer-right">
+                  <div class="user-block">
+                      <a href="#">
+                          <img src="img/user-yellow.png" width="16" height="16" alt="Поиск">
+                      		Войти
+                      </a>
+                  </div>
+                  <a href="#">
+                      <img src="img/compare-yellow.png" width="16" height="16" alt="Поиск">
+                      Сравнить
                   </a>
-                  <a href="#" class="href-insta">
-                      <img src="img/insta.png" width="39" height="38" alt="insta">
+                  <a href="#">
+                      <img src="img/cart-yellow.png" width="16" height="16" alt="Поиск">
+                      Карзина
                   </a>
-                  <a href="#" class="href-twitter">
-                      <img src="img/twitter.png" width="39" height="38" alt="twitter">
-                  </a>
-              </div>
-              <div class="htmlacademy-logo">
-                  <img src="img/htmlacademy.png" width="27" height="34" alt="HtmlAcademyы">
               </div>
           </div>
-        </footer>
+          <div class="footer-average container clearfix">
+              <p class="footer-adress">
+                  г. Москва, ул. Строителей, 15
+              </p>
+              <nav class="nav-footer">
+                  <ul>
+                      <li><a href="#">Доставка</a></li>
+                      <li><a href="#">Гарантия</a></li>
+                      <li><a href="#">Контакты</a></li>
+                  </ul>
+              </nav>
+              <p class="footer-telephone">
+                  Тел.: +7(495) 495-95-95
+              </p>
+          </div>
+          <div class="footer-bottom container clearfix">
+            	<div class="footer-decorative-left">
+            	</div>  
+	            <div class="social">
+	                <a href="http://facebook.com">
+                        <div class="facebook social-icon"></div>
+	                </a>
+	                <a href="#">
+	              	    <div class="insta social-icon"></div>
+	                </a>
+	                <a href="#">
+	              	    <div class="twitter social-icon"></div>
+	                </a>
+	            </div>
+	            <div class="htmlacademy-logo">
+	                <img src="img/htmlacademy.png" width="27" height="34" alt="HtmlAcademyы">
+	            </div>
+	        </div>
+      </footer>
   </body>
 </html>

@@ -1,20 +1,20 @@
 @font-face {
-	font-family: Open Sans; 
+	font-family: 'Open Sans'; 
 	src: local("OpenSans"),
 	url("fonts/opensans.woff");
 } 
 @font-face {
-	font-family: Open Sans light; 
+	font-family: 'Open Sans light'; 
 	src: local("Open Sans light"),
 	url("fonts/opensanslight.woff");
 } 
 @font-face {
-	font-family: Gilroy Light; 
+	font-family: 'Gilroy Light'; 
 	src: local("Gilroy Light"),
 	url("fonts/gilroylight.woff");
 } 
 @font-face {
-	font-family: GilroyExtraBold; 
+	font-family: 'Gilroy ExtraBold'; 
 	src: local("Gilroy ExtraBold"),
 		url("fonts/gilroyextrabold.woff");
 } 
@@ -33,6 +33,11 @@ h1 {
 	font-family: Gilroy Extra bold, Tahoma, Sans;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .clearfix:after {
 	content: "";
 	display: table;
@@ -40,13 +45,16 @@ h1 {
 }
 
 .header-logo {
+    font-family: Gilroy ExtraBold, sans-serif;
 	width: 1040px;
 	margin-left: auto;
 	margin-right: auto;
+	font-size: 48px; 
+    font-weight: bold;    
 }
+
 .container {
 	width: 1200px;
-	background-color: #959595;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -67,7 +75,6 @@ h1 {
 }
 
 .header-left {
-	background-color: #dec362;
 	width: 500px;
 	float: left;
 	margin-right: 20px;
@@ -75,7 +82,6 @@ h1 {
 }
 
 .header-right {
-	background-color: #dec362;
 	width: 520px;
 	float: right;
 	margin-top: 25px;
@@ -86,15 +92,18 @@ h1 {
 	float: left;
 }
 
+.user-block img,
+.report img
+{
+    position: relative;
+    top: 2px;
+}
+
 .report {
 	float: right;
 	width: 220px;
 }
-.header-logo {
-	font-family: GilroyExtraBold;
-	font-weight: bold;
-	font-size: 48px; 
-}
+
 
 .compire {
 	float: left;
@@ -102,6 +111,44 @@ h1 {
 
 .basket {
 	float: right;
+}
+
+.main-menu {
+    margin-top: 48px;
+}
+
+.main-menu ul {
+    padding-top: 7px;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.main-menu ul,
+.nav-footer ul {
+    list-style: none;
+}
+
+.main-menu a,
+.nav-footer a,
+.header-right a {
+    text-decoration: none;
+}
+
+.main-menu li, 
+.nav-footer li {
+    display: inline-block;
+    float: left;
+    margin-right: 38px;
+    vertical-align: top;
+}
+
+.main-menu li:last-child {
+    float: right;
+    margin: 0px
+}
+
+.nav-footer a {
+    color: #fff;
 }
 
 .content {
@@ -134,44 +181,72 @@ h1 {
 	margin-right: 0px;
 }
 
+
 .popular-img {
 	width: 160px;
 	height: 160px;
 	background-color: #f7e296;
+    margin-bottom: 32px;
+}
+
+.popular-img:hover {
+    background-color: #f0c52e;
+}
+.popular-item a:active,
+.popular-item img:active {
+    opacity: 0.3;
+    color: #b2b2b2;
 }
 
 .service-slider {
 	width: 1160px;
-	margin-bottom: -250px;
 }
 
 .service-slider-tab {
 	float: left;
 	height: 320px;
-	width: 277px;
-	margin-right: 80px;
+	width: 273px;
+	margin-right: 112px;
 	border-right: 7px solid #000;
 }
 
 .servise-slider-slide {
 	float: right;
-	width: 796px;
+	width: 760px;
+    margin-top: 80px;
 }
 
-.btn .servise-slider-slide {
-	display: block;
+.slide-txt {
+    float: left;
+    width: 460px;
+}
+
+.servise-slider-slide img {
+    float: right;
+    width: 136px;
+}
+
+.service-slider-tab .btn {
+    color: #f7e184;
 	width: 277px;
+    height: 40px;
+    background-color: black;
+    margin-bottom: 24px;
+}
+
+.btn:first-child {
+    margin-top: 80px;
 }
 
 .decorat-block {
 	background-color: #e5e5e5;
 	width: 100%;
 	height: 287px;
-	margin-bottom: 95px;
+	margin-top: -220px;
+    margin-bottom: 95px;
 }
 
 .logotypes {
-	background-color: #766421;
 	font-size: 0px;
 	margin-bottom: 90px;
 }
@@ -202,11 +277,35 @@ h1 {
 .footer {
 	background-color: #464646;
 	color: #f7e184;
+    min-width: 1240px;
+}
+
+.footer p,
+.footer ul {
+    margin-top: 0;
+    margin-bottom: 0;
+/*    padding; 0;*/
+}
+
+.footer-top {
+    padding-top: 65px;
+    margin-bottom: 16px;
+}
+
+.footer-average {
+    margin-bottom: 60px;
+}
+
+.footer-bottom {
+    margin-bottom: 63px;
 }
 
 .footer-logo {
-	float: left;
+    float: left;
 	color: #f7e184;
+    font-family: Gilroy ExtraBold, sans-serif;
+	font-size: 48px; 
+    font-weight: bold;    
 }
 
 .footer-right {
@@ -220,17 +319,26 @@ h1 {
 	margin-right: 40px;
 }
 
-.footer-average nav {
-	float: left;
-	width: 560;
-	margin-left: auto;
-	margin-right: auto;
+.nav-footer {
+    display: inline-block;
+    width: 600px;
+    text-align: center;
+}
+
+.nav-footer ul {
+    display: inline-block;
+    padding: 0px;
+}
+
+.nav-footer li:last-child {
+    margin-right: 0px;
 }
 
 .footer-telephone {
 	float: right;
 	text-align: right;
-	width: 300px;
+	width: 260px;
+    margin-left: 40px;
 }
 
 .footer-decorative-left {
@@ -238,14 +346,55 @@ h1 {
 	width: 80px;
 	height: 5px;
 	background-color: #f7e184;
-	margin-right: 400px;
 }
 
-.socials {
-	float: left;
-	width: 160px;
-	margin-left: auto;
-	margin-right: auto;
+.social {
+/*    float: left;*/
+	width: 147px;
+    margin-left: auto;
+    margin-right: auto;
+/*    text-align: center;*/
+}
+
+.social-icon {
+/*    display: inline-block;*/
+    float: left;
+    opacity: 0.3;
+}
+
+.social-icon a {
+    margin-right: 15px;
+}
+
+.facebook {
+    width: 39px;
+    height: 38px;
+    background: url("../img/social-icon.png");
+}
+
+
+.insta {
+    width: 39px;
+    height: 38px;
+    background: url("../img/social-icon.png") -54px;
+}
+
+.twitter {
+    width: 39px;
+    height: 38px;
+    background: url("../img/social-icon.png") -108px;
+}
+
+.facebook:hover,
+.insta:hover,
+.twitter:hover {
+    opacity: 0.6;
+}
+
+.facebook:active,
+.insta:active,
+.twitter:active {
+    opacity: 0.1;
 }
 
 .htmlacademy-logo {
