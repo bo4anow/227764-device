@@ -124,7 +124,10 @@ a {
 }
 
 .main-menu ul,
-.nav-footer ul {
+.nav-footer ul,
+.breadcrumbs ul,
+.parametr ul,
+.sorting ul {
     list-style: none;
 }
 
@@ -135,9 +138,16 @@ a {
 }
 
 .main-menu li, 
-.nav-footer li {
+.nav-footer li,
+.breadcrumbs li,
+.parametr li,
+.sorting li {
     display: inline-block;
     float: left;
+}
+
+.main-menu li, 
+.nav-footer li {
     margin-right: 38px;
     vertical-align: top;
 }
@@ -146,6 +156,35 @@ a {
     float: right;
     margin: 0px
 }
+
+.breadcrumbs {
+    display: block;
+    margin-bottom: 50px;
+}
+
+.breadcrumbs ul,
+.sorting ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.parametr li {
+    margin-right: 30px;
+}
+
+.sorting li:first-child {
+    margin-right: 25px;
+}
+.breadcrumbs li {
+    margin-right: 15px;
+}
+
+.delimetr {
+    width: 4px;
+    height: 7px;
+    background: url("../img/broadcrumbs-delimetr.png") no-repeat;
+}
+
 
 .nav-footer a {
     color: #fff;
@@ -349,15 +388,12 @@ a {
 }
 
 .social {
-/*    float: left;*/
 	width: 147px;
     margin-left: auto;
     margin-right: auto;
-/*    text-align: center;*/
 }
 
 .social-icon {
-/*    display: inline-block;*/
     float: left;
     opacity: 0.3;
 }
@@ -370,6 +406,7 @@ a {
     width: 39px;
     height: 38px;
     background: url("../img/social-icon.png");
+    margin-right: 12px;
 }
 
 
@@ -377,6 +414,7 @@ a {
     width: 39px;
     height: 38px;
     background: url("../img/social-icon.png") -54px;
+    margin-right: 12px;
 }
 
 .twitter {
@@ -423,6 +461,8 @@ a {
 
 .list-top {
 	background-color: #efefef;
+    margin-bottom: 70px;
+    height: 70px;
 }
 
 .list-top h2 {
@@ -435,11 +475,13 @@ a {
 .parametr {
 	float: left;
 	width: 500px;
+    padding-top: 10px;
 }
 
 .sorting {
 	float: right;
 	width: 60px;
+    padding-top: 25px;
 }
 
 .list-item {
