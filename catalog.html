@@ -7,60 +7,50 @@
   </head>
   <body>
       <div class="container">
-        <div class="header-logo">
-            <span class="header-logo">DEVICE</span>
-        </div>
+       <div class="header-logo">
+	    	<span>DEVICE</span>
+	   </div>
         <header class="header clearfix">
-            <div class="header-left">
-              <div class="header-search" id="search">
-                  <form action="#" method="get">
-                      <button type="submit" name="search">
-                          <img src="img/search.png" width="16" height="16" alt="Поиск">
-                      </button>
-                      <input type="text" name="search-text" placeholder="Поиск по сайту">
-                  </form>
+                <div class="header-left">
+	    		  <div class="header-search" id="search">
+                      <form action="#" method="get">
+                          <input type="text" name="search-text" placeholder="Поиск по сайту">
+                          <input type="submit" name="search-btn" value="Найти">
+                      </form>
+                  </div>
+                  <nav class="main-menu">
+                      <a class="catalog-menu" href="#">Каталог товаров</a>
+                      <ul class="menu-secondary" id="catalog-menu">
+                          <li><a href="#">Виртуальная реальность</a></li>
+                          <li><a href="#">Фитнес браслеты</a></li>
+                          <li><a href="#">Квадракоптеры</a></li>
+                          <li><a href="#">Моноподы для селфи</a></li>
+                          <li><a href="#">Умные часы</a></li>
+                          <li><a href="#">Экшн-камеры</a></li>
+                      </ul>
+                  </nav>
               </div>
-              <nav class="main-menu">
-                  <a href="#">Каталог товаров
-                      <img src="img/plus.png" width="16" height="16" alt="User">
-                  </a>
-                  <ul class="menu-secondary" id="catalog-menu">
-                      <li><a href="#">Виртуальная реальность</a></li>
-                      <li><a href="#">Фитнес браслеты</a></li>
-                      <li><a href="#">Квадракоптеры</a></li>
-                      <li><a href="#">Моноподы для селфи</a></li>
-                      <li><a href="#">Умные часы</a></li>
-                      <li><a href="#">Экшн-камеры</a></li>
-                  </ul>
-              </nav>
-            </div>
-            <div class="header-right">
-                <div class="user-block" id="user-block">
-                    <a href="#">
-                        <img src="img/user.png" width="16" height="16" alt="User">
-                        Валентин Петухов
-                    </a>
-                    <a href="#" class="logout">Выйти</a>
-                </div>
-                <div class="report">
-                    <a href="#" class="compare">
-                        <img src="img/compare.png" width="16" height="16" alt="User">
-                        Сравнить
-                    </a>
-                    <a href="#" class="basket">
-                        <img src="img/cart.png" width="16" height="16" alt="User">
-                        Карзина
-                    </a>
-                </div>
-                <nav class="main-menu" id="main-menu">
-                    <ul>
-                        <li><a href="#">Доставка</a></li>
-                        <li><a href="#">Гарантия</a></li>
-                        <li><a href="#">Контакты</a></li>
-                     </ul>
-                </nav>
-            </div>
-        </header>
+              <div class="header-right">
+                  <div class="header-right-top clearfix">
+                      <div class="user-block" id="user-block">
+                          <a class="header-user" href="#">Валентин Петухов</a>
+                          <a class="user-out" href="#">Выйти</a>
+                      </div>
+                      <div class="report">
+                          <a href="#" class="compare">Сравнить</a>
+                          <a href="#" class="basket">Карзина</a>
+                      </div>
+                  </div>
+                  <nav class="main-menu" id="main-menu">
+                      <ul class="clearfix">
+                          <li><a href="#">Доставка</a></li>
+                          <li><a href="#">Гарантия</a></li>
+                          <li><a href="#">Контакты</a></li>
+                      </ul>
+                  </nav>
+              </div>
+          </header>
+          
       </div>
 
 
@@ -210,24 +200,15 @@
       </main>
 
     <!--footer-->  
-      <footer class="footer clearfix">
+     <footer class="footer clearfix">
           <div class="footer-top container clearfix">
-              <span class="footer-logo">DEVICE</span>
+              <p class="footer-logo">DEVICE</p>
               <div class="footer-right">
-                  <div class="user-block">
-                      <a href="#">
-                          <img src="img/user-yellow.png" width="16" height="16" alt="Поиск">
-                      		Войти
-                      </a>
+                  <div class="footer-user-block">
+                      <a class="footer-user" href="#">Войти</a>
                   </div>
-                  <a href="#">
-                      <img src="img/compare-yellow.png" width="16" height="16" alt="Поиск">
-                      Сравнить
-                  </a>
-                  <a href="#">
-                      <img src="img/cart-yellow.png" width="16" height="16" alt="Поиск">
-                      Карзина
-                  </a>
+                  <a class="footer-compare" href="#"> Сравнить</a>
+                  <a class="footer-basket" href="#">Карзина</a>
               </div>
           </div>
           <div class="footer-average container clearfix">
@@ -242,7 +223,7 @@
                   </ul>
               </nav>
               <p class="footer-telephone">
-                  Тел.: +7(495) 495-95-95
+                  Тел.: +7 (495) 495-95-95
               </p>
           </div>
           <div class="footer-bottom container clearfix">
@@ -259,9 +240,9 @@
 	              	    <div class="twitter social-icon"></div>
 	                </a>
 	            </div>
-	            <div class="htmlacademy-logo">
-	                <img src="img/htmlacademy.png" width="27" height="34" alt="HtmlAcademyы">
-	            </div>
+                <a href="#">
+	               <div class="htmlacademy-logo"></div>
+                </a>
 	        </div>
       </footer>
   </body>

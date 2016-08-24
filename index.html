@@ -12,19 +12,15 @@
 	    		<span>DEVICE</span>
 	    	</div>
           <header class="header clearfix">
-  				    <div class="header-left">
-	    			      <div class="header-search" id="search">
+                <div class="header-left">
+	    		  <div class="header-search" id="search">
                       <form action="#" method="get">
-                          <button type="submit" name="search">
-                              <img src="img/search.png" width="16" height="16" alt="Поиск">
-                          </button>
                           <input type="text" name="search-text" placeholder="Поиск по сайту">
+                          <input type="submit" name="search-btn" value="Найти">
                       </form>
                   </div>
                   <nav class="main-menu">
-                      <a href="#">Каталог товаров
-                          <img src="img/plus.png" width="16" height="16" alt="User">
-                      </a>
+                      <a class="catalog-menu" href="#">Каталог товаров</a>
                       <ul class="menu-secondary" id="catalog-menu">
                           <li><a href="#">Виртуальная реальность</a></li>
                           <li><a href="#">Фитнес браслеты</a></li>
@@ -38,20 +34,11 @@
               <div class="header-right">
                   <div class="header-right-top clearfix">
                       <div class="user-block" id="user-block">
-                          <a href="#">
-                              <img src="img/user.png" width="16" height="16" alt="User">
-                              <span>Войти</span>
-                          </a>
+                          <a class="header-user" href="#">Войти</a>
                       </div>
                       <div class="report">
-                          <a href="#" class="compare">
-                              <img src="img/compare.png" width="16" height="16" alt="User">
-                              Сравнить
-                          </a>
-                          <a href="#" class="basket">
-                              <img src="img/cart.png" width="16" height="16" alt="User">
-                              Карзина
-                          </a>
+                          <a href="#" class="compare">Сравнить</a>
+                          <a href="#" class="basket">Карзина</a>
                       </div>
                   </div>
                   <nav class="main-menu" id="main-menu">
@@ -69,25 +56,32 @@
       <main class="main">
 
   		    <article class="slide content clearfix" id="slider">
-              <img src="img/selfies-stick.png" width="384" height="486" alt="Селфи Палка">
+                <div class="slider-left">
+                     <img class="slider-img" src="img/slide-1.png" width="384" height="486" alt="Селфи Палка">
+                </div>
               <div class="product-about">
-                  <h2>Делай селфи как Бен Стиллер!</h2>
-                  <p>
+                  <div class="number-slide">
+                      <p>01</p>
+                  </div>
+                  <h2>Делай селфи<br>как, Бен Стиллер!</h2>
+                  <p class="product-description">
                       Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
                   </p>
-                  <a href="#">Подробнее</a>
+                  <div class="btn-slider">
+                      <a class="btn btn-active" href="#">Подробнее</a>
+                  </div>
                   <div class="product-info">
                       <div class="characteristic">
-                          <span class="characteristic-value" id="value-Length">8,5 м</span>
-                          <span class="characteristic-name" id="name-Length">Длинна палки</span>
+                          <p class="characteristic-value" id="value-Length">8,5 м</p>
+                          <p class="characteristic-name" id="name-Length">Длинна палки</p>
                       </div>
                       <div class="characteristic">
-                          <span class="characteristic-value" id="value-weight">5 кг</span>
-                          <span class="characteristic-name" id="name-weight">Вес палки</span>
+                          <p class="characteristic-value" id="value-weight">5 кг</p>
+                          <p class="characteristic-name" id="name-weight">Вес палки</p>
                       </div>
-                      <div class="characteristic">
-                          <span class="characteristic-value" id="value-material">Карбон</span>
-                          <span class="characteristic-name" id="name-material">Материал</span>
+                      <div class="characteristic char3">
+                          <p class="characteristic-value" id="value-material">Карбон</p>
+                          <p class="characteristic-name" id="name-material">Материал</p>
                       </div>
                   </div>
               </div>
@@ -107,7 +101,7 @@
                       <div class="popular-img">
                           <img src="img/popular-2.png" width="160" height="160" alt="Монопады для селфи">
                       </div>
-                      <p>Монопады для селви</p>
+                      <p>Монопады<br>для селви</p>
                   </a>
               </div>
               <div class="popular-item">
@@ -123,7 +117,7 @@
                       <div class="popular-img">
                           <img src="img/popular-4.png" width="160" height="160" alt="Фитнес браслеты">
                       </div>
-                      <p>Фитнес браслеты</p>
+                      <p>Фитнес<br>браслеты</p>
                   </a>
               </div>
               <div class="popular-item">
@@ -145,11 +139,29 @@
   		    </div>
     	
     		  <div class="service-slider content clearfix">
-        			<div class="service-slider-tab">
-          				<div class="btn">Доставка</div>
-          				<div class="btn">Гарантия</div>
-          				<div class="btn">Кредит</div>
-        			</div>
+                  <div class="service-slider-tab">
+                        <div class="btn-container">
+                            <a href="#">
+                                <div class="btn-slider-tab">
+                                    <span class="btn">Доставка</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="btn-container">
+                            <a href="#">
+                                <div class="btn-slider-tab">
+                                    <span class="btn">Гарантия</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="btn-container">
+                            <a href="#">
+                                <div class="btn-slider-tab">
+                                    <span class="btn" >Кредит</span>
+                                </div>
+                            </a>
+                        </div>    
+                    </div>
         			<div class="servise-slider-slide">
           				<div class="slide-txt">
             					<h2>Доставка</h2>
@@ -164,15 +176,15 @@
     		  <div class="decorat-block">
     		  </div>
   	    
-  		    <div class="logotypes content">
-              <img src="img/logo-djl.jpg" width="260" height="100" alt="DJI">
-              <img src="img/logo-sp-gadgets.jpg" width="260" height="100" alt="SP Gadgets">
-              <img src="img/logo-gopro.jpg" width="260" height="100" alt="GoPro">
-              <img src="img/logo-vive.jpg" width="260" height="100" alt="VIVI">
+  		    <div class="logotypes content clearfix">
+              <div class="logo-djl"></div>
+              <div class="logo-sp-gadgets"></div>
+              <div class="logo-gopro"></div>
+              <div class="logo-vive"></div>
   		    </div>
 
   		    <div class="info content clearfix">
-              <div class="info-abiut-us">
+              <div class="info-about-us">
                   <h2>О нас</h2>
                   <p>
                       Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
@@ -185,39 +197,38 @@
                       <li>Автотрейдинг</li>
                       <li>ЖелДорЭкспедиция</li>
                   </ul>
-                  <a href="#">Подробнее о нас</a>
-    			    </div>
+                  <a href="#">
+                      <div class="btn-info">
+                          <span class="btn btn-active">Подробнее о нас</span>
+                      </div>
+                  </a>
+              </div>
     			    <div class="info-contact">
                       <h2>Контакты</h2>
                       <p>
-                          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бвает.
+                          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
                       </p>
-                      <a href="#">
+                      <a class="info-map" href="#">
                           <img src="img/map.jpg" width="560" height="220" alt="Карта">
                       </a>
-                      <a href="#">Напишите нам</a>
+                      <a href="#">
+                          <div class="btn-info">
+                              <span class="btn btn-active">Напишите нам</span>
+                          </div>
+                      </a>
     			    </div>
   		    </div>
       </main>
 
       <footer class="footer clearfix">
           <div class="footer-top container clearfix">
-              <span class="footer-logo">DEVICE</span>
+              <p class="footer-logo">DEVICE</p>
               <div class="footer-right">
-                  <div class="user-block">
-                      <a href="#">
-                          <img src="img/user-yellow.png" width="16" height="16" alt="Поиск">
-                      		Войти
-                      </a>
+                  <div class="footer-user-block">
+                      <a class="footer-user" href="#">Войти</a>
                   </div>
-                  <a href="#">
-                      <img src="img/compare-yellow.png" width="16" height="16" alt="Поиск">
-                      Сравнить
-                  </a>
-                  <a href="#">
-                      <img src="img/cart-yellow.png" width="16" height="16" alt="Поиск">
-                      Карзина
-                  </a>
+                  <a class="footer-compare" href="#"> Сравнить</a>
+                  <a class="footer-basket" href="#">Карзина</a>
               </div>
           </div>
           <div class="footer-average container clearfix">
@@ -232,7 +243,7 @@
                   </ul>
               </nav>
               <p class="footer-telephone">
-                  Тел.: +7(495) 495-95-95
+                  Тел.: +7 (495) 495-95-95
               </p>
           </div>
           <div class="footer-bottom container clearfix">
@@ -249,9 +260,9 @@
 	              	    <div class="twitter social-icon"></div>
 	                </a>
 	            </div>
-	            <div class="htmlacademy-logo">
-	                <img src="img/htmlacademy.png" width="27" height="34" alt="HtmlAcademyы">
-	            </div>
+                <a href="#">
+	               <div class="htmlacademy-logo"></div>
+                </a>
 	        </div>
       </footer>
   </body>
