@@ -52,6 +52,9 @@ a {
 	font-size: 48px;  
     letter-spacing: 3px;
 }
+.header-logo a {
+     color: #464646;
+}
 
 .container {
 	width: 1200px;
@@ -283,16 +286,17 @@ a {
 	width: 1190px;
 	margin-left: auto;
 	margin-right: auto;
-    padding: 0 15px;
+    padding: 0 5px;
 }
 
-.slide {
+.slider {
 	margin-bottom: 110px;
+    height: 500px;
     color:black;
     position: relative;
 }
 
-.slide::before {
+.slider::before {
     position: absolute;
     left: 0px;
     right: 0px;
@@ -321,6 +325,7 @@ a {
     left: 0px;
     right: 60px;
     height: 179.2px;
+    z-index: -1;
 }
 
 .product-about h2 {
@@ -350,6 +355,7 @@ a {
 	float: right;
 	width: 560px;
     position: relative;
+    padding-top: 82px;
 }
 
 .product-description {
@@ -360,7 +366,7 @@ a {
 .slide-txt h2,
 .info-about-us h2, 
 .info-contact h2 {
-/*    margin: 0;*/
+    margin: 0;
     font-size: 47px;
     font-family: Gilroy ExtraBold, Arial, sans-serif;
     margin-bottom: 35px;
@@ -388,9 +394,7 @@ a {
     opacity: 0.3;
 }
 
-.btn-slider .btn::before,
-.btn-slider-tab .btn::before,
-.btn-info .btn::before {
+.btn::before {
     position: absolute;
     top: 16px;
     bottom: 16px;
@@ -448,10 +452,57 @@ p .characteristic-value {
     margin: 0px;
 }
 
+.slide {
+    display: none;
+}
+
+.slider > input[type="radio"],
+.service-slider > input[type="radio"]{
+  display: none;
+    position: absolute;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 170px;
+  right: 70px;
+    width: 100px;
+  z-index: 20;
+
+  font-size: 0;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  margin-right: 23px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 3px solid #000000;
+  opacity: 0.3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#btn-1:checked ~ #slide-1,
+#btn-2:checked ~ #slide-2,
+#btn-3:checked ~ #slide-3 {
+    display: block;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"]{
+    opacity: 1;
+}
+
 .popular {
 	margin-bottom: 80px;
     font-size: 18px;
-    font-family: Gilroy ExtraBold, Arial, sans-serif;
+    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 }
 
 .popular-item {
@@ -495,26 +546,36 @@ p .characteristic-value {
     padding-top: 80px;
 }
 
-.btn-container {
+.btn-container1,
+.btn-container2,
+.btn-container3 {
     width: 273px;
     height: 40px;
     margin-bottom: 20px;
     position: relative;
+    color: #000000;
 }
 
-.btn-container a:active::before {
-    position: absolute;
-    content: "";
-    width: 273px;
-    height: 40px;
+.service-slider-tab label {
+    cursor: pointer;
+}
+
+#service-btn-1:checked ~ .btn-container1,
+#service-btn-2:checked ~ .btn-container2, 
+#service-btn-3:checked ~ .btn-container3 {
     background-color: #000;
+    color: #f7e184;
 }
 
-/*
-.btn-container:active {
-    background-color: black;
+.servise-slide {
+    display: none;
 }
-*/
+
+#service-btn-1:checked ~ #service-slide1,
+#service-btn-2:checked ~ #service-slide2,
+#service-btn-3:checked ~ #service-slide3 {
+    display: block;
+}
 
 .btn-slider-tab {
     position: relative;
@@ -522,15 +583,17 @@ p .characteristic-value {
     width: 160px;
     height: 40px;
     text-align: center;
-    text-transform: uppercase;
 }
 
-.btn-slider-tab:active {
-    background: none;
-    color: #f7e184;
+.btn-slider-tab:hover {
+    color: #000000;
 }
 
-.servise-slider-slide {
+.btn:active::before {
+    opacity: 0;
+}
+
+.servise-slide {
 	float: right;
 	width: 760px;
     margin-top: 83px;
@@ -542,9 +605,8 @@ p .characteristic-value {
     line-height: 30px;
 }
 
-.servise-slider-slide img {
+.servise-slide img {
     float: right;
-    width: 136px;
 }
 
 .decorat-block {
@@ -630,7 +692,7 @@ p .characteristic-value {
     position: relative;
 }
 
-.info-about-us:before {
+.info-about-us::before {
 	width: 80px;
     height: 7px;
     content: "";
@@ -645,16 +707,30 @@ p .characteristic-value {
 }
 
 .info-about-us ul {
-    padding-left: 20px;
+    padding-left: 35px;
     margin-top: 75px;
     margin-bottom: 72px;
     color: #000000;
+    list-style: none;
 }
 
 .info-about-us li {
     font-family: Gilroy ExtraBold, Arial, sans-serif;
     font-size: 16px;
+    margin: 0px;
     margin-bottom: 20px;
+    position: relative;
+}
+
+.info-about-us li::before {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    content: "";
+    top: 5px;
+    left: -25px;
+    border: 3px solid #b2b2b2;
+    border-radius: 50%;
 }
 
 .info-map img {
@@ -695,6 +771,7 @@ p .characteristic-value {
 	background-color: #464646;
 	color: #fff;
     min-width: 1200px;
+    padding: 0 5px;
 }
 
 .footer a {
@@ -914,12 +991,40 @@ p .characteristic-value {
 	margin-right: auto;
 }
 
-.catalog-left {
+.catalog-column-left {
 	float: left;
 	width: 268px;
-	background-color: #efefef;
 	margin-left: 60px;
 	margin-right: 72px;
+}
+
+.catalog-row-left {
+    background-color: #dcdcdc;
+	float: left;
+	width: 268px;
+    height: 70px;
+	padding-left: 65px;
+	margin-right: 72px;
+}
+
+.catalog-row p {
+    float: left;
+    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+    font-size: 16px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 70px;
+    margin: 0px;
+    width: 160px;
+}
+
+.catalog-filter {
+    background-color: #efefef;
+    padding-top: 70px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
 }
 
 .catalog-column-right {
@@ -928,7 +1033,6 @@ p .characteristic-value {
 }
 
 .list-top {
-	background-color: #efefef;
     margin-bottom: 70px;
     height: 70px;
 }
@@ -940,10 +1044,65 @@ p .characteristic-value {
 
 }
 
+.catalog {
+    position: relative;
+}
+
+.catalog form {
+    width: 200px;
+}
+
+.catalog form h3 {
+    font-family: Gilroy ExtraBold, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 15px; 
+}
+
+.catalog ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.catalog-form li {
+    margin-bottom: 17px;
+}
+
+.filter-cost {
+    border-top: 2px solid #000000;
+    margin-bottom: 40px;
+}
+
+.filter-color {
+    border-top: 2px solid #000000;
+    margin-bottom: 40px;
+}
+
+.filter-bluetooth {
+    border-top: 2px solid #000000;
+    margin-bottom: 40px;
+}
+
+.filter-bluetooth label {
+    cursor: pointer;
+    
+}
+
 .parametr {
 	float: left;
 	width: 500px;
     padding-top: 10px;
+}
+
+.parametr a {
+    opacity: 0.3;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+}
+
+.parametr a:hover {
+    opacity: 0.6;
 }
 
 .sorting {
@@ -952,35 +1111,219 @@ p .characteristic-value {
     padding-top: 25px;
 }
 
+.sorting a {
+    opacity: 0.2;
+}
+
+.sorting a:hover {
+    opacity: 0.4;
+}
+
+.sorting a:active {
+    opacity: 1;
+}
+
 .list-item {
 	display: inline-block;
 	float: left;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.list-item>img {
+    margin-bottom: 30px;
+}
+
+.list-item-btn {
+    position: absolute;
+    opacity: 0;
+    height: 380px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    color: black;
+    z-index: 1;
+}
+
+.list-item-btn:hover {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.list-item-btn .add-cart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-item {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+
+.add-compare {
+    position: absolute;
+    left: 50%;
+    top: 225px;
+    transform: translate(-50%, 0%);
+    font-size: 13px;
+    opacity: 0.5;
+}
+
+.add-compare:hover {
+    opacity: 1;
+}
+
+.add-compare:active {
+    opacity: 0.2;
+}
+
+.btn-item:hover {
+    background-color: #f0c52e;
+}
+
+.item-new {
+    position: absolute;
+    display: none;
+    text-align: center;
+    line-height: 60px;
+    top: 29px;
+    right: 27px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.item-new-show {
+    display: block;
 }
 
 .list-item:nth-child(odd) {
 	margin-right: 40px;
 }
 
-.list-botton {
-	background-color: #efefef;
+.list-paginator {
+	background-color: #ebebeb;
+    width: 760px;
+    height: 70px;
+    margin-bottom: 70px;
+    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
 }
+
+.description-name {
+    float: left;
+    width: 260px;
+    margin: 0px;
+    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+    font-size: 18px;
+}
+
+.description-price {
+    float: right;
+    font-family: "Gilroy Light", "Arial", sans-serif;
+    margin: 0px;
+} 
 
 .list-previous {
 	float: left;
-	width: 170px;
-	padding-left: 30px;
-	margin-right: 60px;
+    width: 125px;
+    margin-right: 10px;
+    line-height: 70px;
 }
 
 .list-page {
-	float: left;
-	width: 240px;
-	margin-right: 60px;
+    display: inline-block;
+    width: 490px;
+    line-height: 70px;
+    text-align: center;
 }
 
 .list-next {
 	float: right;
-	width: 105px;
-	padding-left: 95px;
+    width: 135px;
+    line-height: 70px;
+}
+
+.list-previous a,
+.list-next a {
+    display: inline-block;
+    padding: 0 30px;
+    height: 70px;
+}
+
+.list-previous a:hover,
+.list-next a:hover {
+    background-color: #d9d9d9;
+}
+
+.list-previous a:active,
+.list-next a:active {
+    color: #979797;
+    background-color: #d9d9d9;
+}
+
+.list-page a {
+    opacity: 0.3;
+    margin-right: 32px;
+}
+
+.list-page a:last-child {
+    margin: 0px;
+}
+
+.list-page .current,
+.parametr .current {
+    opacity: 1;
+}
+
+.catalog-wraper {
+    background: linear-gradient(to left, #ffffff 80%, #efefef 20%);
+}
+
+.catalog-row {
+    min-width: 1200px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.catalog-form input {
+    margin-right: 20px;
+}
+
+.square-chekbox {
+   cursor: pointer;
+}
+
+.btn-form {
+    border: none;
+    background: none;
+    cursor: pointer;
+    height: 40px;
+    outline: none;
+    line-height: 39px;
+}
+.btn-form::before {
+    position: absolute;
+    top: 16px;
+    bottom: 16px;
+    left: 0;
+    right: 0;
+    content: "";
+    background-color: #f0c52e;
 }
 

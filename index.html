@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
@@ -55,37 +55,102 @@
 
       <main class="main">
 
-  		    <article class="slide content clearfix" id="slider">
-                <div class="slider-left">
-                     <img class="slider-img" src="img/slide-1.png" width="384" height="486" alt="Селфи Палка">
+  		    <div class="slider content clearfix">
+                <input type="radio" id="btn-1" name="toggle" checked>
+                <input type="radio" id="btn-2" name="toggle">
+                <input type="radio" id="btn-3" name="toggle">
+                <div class="slide" id="slide-1">
+                    <div class="slider-left">
+                         <img class="slider-img" src="img/slide-1.png" width="384" height="486" alt="Селфи Палка">
+                    </div>
+                    <div class="product-about">
+                        <div class="number-slide">
+                            <p>01</p>
+                        </div>
+                        <h2>Делай селфи<br>как, Бен Стиллер!</h2>
+                        <p class="product-description">
+                            Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                        </p>
+                        <div class="btn-slider">
+                            <a class="btn btn-active" href="#">Подробнее</a>
+                        </div>
+                        <div class="product-info">
+                            <div class="characteristic">
+                                <p class="characteristic-value" id="value-Length">8,5 м</p>
+                                <p class="characteristic-name" id="name-Length">Длинна палки</p>
+                            </div>
+                            <div class="characteristic">
+                                <p class="characteristic-value" id="value-weight">5 кг</p>
+                                <p class="characteristic-name" id="name-weight">Вес палки</p>
+                            </div>
+                            <div class="characteristic char3">
+                                <p class="characteristic-value" id="value-material">Карбон</p>
+                                <p class="characteristic-name" id="name-material">Материал</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--slide-1-->
+                <div class="slide" id="slide-2">
+                    <div class="slider-left">
+                         <img class="slider-img" src="img/slide-2.png" width="345" height="485" alt="Фитнесс-браслеты">
+                    </div>
+                    <div class="product-about">
+                        <div class="number-slide">
+                            <p>02</p>
+                        </div>
+                        <h2>Худеем<br>правильно!</h2>
+                        <p class="product-description">
+                            Мотивирующие фитнесс-браслеты помогут найти в себе силы
+                            <br>
+                            не пропускать занятия и соблюдать диету.
+                        </p>
+                        <div class="btn-slider">
+                            <a class="btn btn-active" href="#">Подробнее</a>
+                        </div>
+                        <div class="product-info">
+                            <div class="characteristic">
+                                <p class="characteristic-value" id="value-Length">48 часов</p>
+                                <p class="characteristic-name" id="name-Length">Без подзарядки</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--slide-2-->
+                <div class="slide" id="slide-3">
+                    <div class="slider-left">
+                         <img class="slider-img" src="img/slide-3.3.png" width="535" height="500" alt="Селфи Палка">
+                    </div>
+                    <div class="product-about">
+                        
+                        <h2>Порхает как бобочка,<br>жалит как пчела!</h2>
+                        <div class="number-slide">
+                            <p>03</p>
+                        </div>
+                        <p class="product-description">
+                            Этот обычный, на первый взгляд, квадрокоптер оснащен
+                            <br> 
+                            мощным лазером, замаскированным под стандартную камеру.
+                        </p>
+                        <div class="btn-slider">
+                            <a class="btn btn-active" href="#">Подробнее</a>
+                        </div>
+                        <div class="product-info">
+                            <div class="characteristic">
+                                <p class="characteristic-value" id="value-Length">800 м</p>
+                                <p class="characteristic-name" id="name-Length">Дальность полета</p>
+                            </div>
+                            <div class="characteristic">
+                                <p class="characteristic-value" id="value-weight">50 м</p>
+                                <p class="characteristic-name" id="name-weight">Радиус поражения</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--slide-3-->
+                <div class="slider-controls">
+                    <label for="btn-1"></label>
+                    <label for="btn-2"></label>
+                    <label for="btn-3"></label>
                 </div>
-              <div class="product-about">
-                  <div class="number-slide">
-                      <p>01</p>
-                  </div>
-                  <h2>Делай селфи<br>как, Бен Стиллер!</h2>
-                  <p class="product-description">
-                      Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-                  </p>
-                  <div class="btn-slider">
-                      <a class="btn btn-active" href="#">Подробнее</a>
-                  </div>
-                  <div class="product-info">
-                      <div class="characteristic">
-                          <p class="characteristic-value" id="value-Length">8,5 м</p>
-                          <p class="characteristic-name" id="name-Length">Длинна палки</p>
-                      </div>
-                      <div class="characteristic">
-                          <p class="characteristic-value" id="value-weight">5 кг</p>
-                          <p class="characteristic-name" id="name-weight">Вес палки</p>
-                      </div>
-                      <div class="characteristic char3">
-                          <p class="characteristic-value" id="value-material">Карбон</p>
-                          <p class="characteristic-name" id="name-material">Материал</p>
-                      </div>
-                  </div>
-              </div>
-  		    </article>
+  		    </div>
 
   		    <div class="popular content clearfix">
               <div class="popular-item">
@@ -139,30 +204,34 @@
   		    </div>
     	
     		  <div class="service-slider content clearfix">
+                  <input type="radio" id="service-btn-1" name="service-toogle" checked>
+                  <input type="radio" id="service-btn-2" name="service-toogle">
+                  <input type="radio" id="service-btn-3" name="service-toogle">
                   <div class="service-slider-tab">
-                        <div class="btn-container">
-                            <a href="#">
-                                <div class="btn-slider-tab">
-                                    <span class="btn">Доставка</span>
+                       
+                        <div class="btn-container1">
+                            <label for="service-btn-1">
+                                <div class="btn-slider-tab btn">
+                                    Доставка
                                 </div>
-                            </a>
+                            </label>
                         </div>
-                        <div class="btn-container">
-                            <a href="#">
-                                <div class="btn-slider-tab">
-                                    <span class="btn">Гарантия</span>
+                        <div class="btn-container2">
+                            <label for="service-btn-2">
+                                <div class="btn-slider-tab btn">
+                                    Гарантия
                                 </div>
-                            </a>
+                            </label>
                         </div>
-                        <div class="btn-container">
-                            <a href="#">
-                                <div class="btn-slider-tab">
-                                    <span class="btn" >Кредит</span>
+                        <div class="btn-container3">
+                            <label for="service-btn-3">
+                                <div class="btn-slider-tab btn">
+                                    Кредит
                                 </div>
-                            </a>
+                            </label>
                         </div>    
                     </div>
-        			<div class="servise-slider-slide">
+        			<div class="servise-slide" id="service-slide1">
           				<div class="slide-txt">
             					<h2>Доставка</h2>
             					<p>
@@ -170,6 +239,26 @@
             					</p>
           				</div>
           				<img src="img/delivery.png" width="136" height="164" alt="Доставка">
+                    </div>
+                    <div class="servise-slide" id="service-slide2">
+          				<div class="slide-txt">
+            					<h2>Гарантия</h2>
+            					<p>
+            						Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+                                    Товар, не дом, конечно же.
+            					</p>
+          				</div>
+          				<img src="img/warranty.png" width="171" height="195" alt="Доставка">
+                    </div>
+                    <div class="servise-slide" id="service-slide3">
+          				<div class="slide-txt">
+            					<h2>Кредит</h2>
+            					<p>
+            						Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
+                                    условия кредита. Выгодные для нашего банка, разумеется.
+            					</p>
+          				</div>
+          				<img src="img/credit.png" width="156" height="188" alt="Доставка">
                     </div>
     		  </div>
 
