@@ -277,7 +277,6 @@ a {
     background: url("../img/broadcrumbs-delimetr.png") no-repeat;
 }
 
-
 .nav-footer a {
     color: #fff;
 }
@@ -560,9 +559,9 @@ p .characteristic-value {
     cursor: pointer;
 }
 
-#service-btn-1:checked ~ .btn-container1,
-#service-btn-2:checked ~ .btn-container2, 
-#service-btn-3:checked ~ .btn-container3 {
+#service-btn-1:checked ~ .service-slider-tab .btn-container1,
+#service-btn-2:checked ~ .service-slider-tab .btn-container2, 
+#service-btn-3:checked ~ .service-slider-tab .btn-container3 {
     background-color: #000;
     color: #f7e184;
 }
@@ -994,7 +993,7 @@ p .characteristic-value {
 .catalog-column-left {
 	float: left;
 	width: 268px;
-	margin-left: 60px;
+	padding-left: 60px;
 	margin-right: 72px;
 }
 
@@ -1089,6 +1088,18 @@ p .characteristic-value {
     
 }
 
+.btn-form-submit {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    z-index: 1;
+}
+
+.btn-form-submit:hover {
+    background-color: #f0c52e;
+}
 .parametr {
 	float: left;
 	width: 500px;
@@ -1225,6 +1236,10 @@ p .characteristic-value {
     text-align: center;
 }
 
+.list-item-description {
+    line-height: 18px;
+}
+
 .description-name {
     float: left;
     width: 260px;
@@ -1292,7 +1307,7 @@ p .characteristic-value {
 }
 
 .catalog-wraper {
-    background: linear-gradient(to left, #ffffff 80%, #efefef 20%);
+    background: linear-gradient(to left, #ffffff 75%, #efefef 25%);
 }
 
 .catalog-row {
