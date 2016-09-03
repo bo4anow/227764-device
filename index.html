@@ -16,18 +16,24 @@
 	    		  <div class="header-search" id="search">
                       <form action="#" method="get">
                           <input type="text" name="search-text" placeholder="Поиск по сайту">
-                          <input type="submit" name="search-btn" value="Найти">
+                          <input class="search-btn" type="submit" id="search-btn" name="search-btn" value="Найти">
                       </form>
                   </div>
                   <nav class="main-menu">
                       <a class="catalog-menu" href="#">Каталог товаров</a>
-                      <ul class="menu-secondary" id="catalog-menu">
-                          <li><a href="#">Виртуальная реальность</a></li>
-                          <li><a href="#">Фитнес браслеты</a></li>
-                          <li><a href="#">Квадракоптеры</a></li>
-                          <li><a href="#">Моноподы для селфи</a></li>
-                          <li><a href="#">Умные часы</a></li>
-                          <li><a href="#">Экшн-камеры</a></li>
+                      <ul class="menu-secondary">
+                          <span class="catalog-column1">
+                              <li><a href="#">Виртуальная реальность</a></li>
+                              <li><a href="#">Моноподы для селфи</a></li>
+                              <li><a href="#">Экшн-камеры</a></li>
+                          </span>
+                          <span class="catalog-column2">
+                              <li><a href="#">Фитнес браслеты</a></li>
+                              <li><a href="#">Умные часы</a></li>
+                          </span>
+                          <span class="catalog-column3">
+                              <li><a href="#">Квадракоптеры</a></li>
+                          </span>
                       </ul>
                   </nav>
               </div>
@@ -41,8 +47,8 @@
                           <a href="#" class="basket">Карзина</a>
                       </div>
                   </div>
-                  <nav class="main-menu" id="main-menu">
-                      <ul class="clearfix">
+                  <nav class="main-menu clearfix" id="main-menu">
+                      <ul>
                           <li><a href="#">Доставка</a></li>
                           <li><a href="#">Гарантия</a></li>
                           <li><a href="#">Контакты</a></li>
@@ -59,7 +65,7 @@
                 <input type="radio" id="btn-1" name="toggle" checked>
                 <input type="radio" id="btn-2" name="toggle">
                 <input type="radio" id="btn-3" name="toggle">
-                <div class="slide" id="slide-1">
+                <div class="slide clearfix" id="slide-1">
                     <div class="slider-left">
                          <img class="slider-img" src="img/slide-1.png" width="384" height="486" alt="Селфи Палка">
                     </div>
@@ -67,30 +73,30 @@
                         <div class="number-slide">
                             <p>01</p>
                         </div>
-                        <h2>Делай селфи<br>как, Бен Стиллер!</h2>
+                        <h2>Делай селфи,<br>как Бен Стиллер!</h2>
                         <p class="product-description">
                             Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
                         </p>
                         <div class="btn-slider">
                             <a class="btn btn-active" href="#">Подробнее</a>
                         </div>
-                        <div class="product-info">
+                        <div class="product-info clearfix">
                             <div class="characteristic">
-                                <p class="characteristic-value" id="value-Length">8,5 м</p>
-                                <p class="characteristic-name" id="name-Length">Длинна палки</p>
+                                <p class="characteristic-value" id="Length-value">8,5 м</p>
+                                <p class="characteristic-name" id="Length-name">Длинна палки</p>
                             </div>
                             <div class="characteristic">
-                                <p class="characteristic-value" id="value-weight">5 кг</p>
-                                <p class="characteristic-name" id="name-weight">Вес палки</p>
+                                <p class="characteristic-value" id="weight-value">5 кг</p>
+                                <p class="characteristic-name" id="weight-name">Вес палки</p>
                             </div>
                             <div class="characteristic char3">
-                                <p class="characteristic-value" id="value-material">Карбон</p>
-                                <p class="characteristic-name" id="name-material">Материал</p>
+                                <p class="characteristic-value" id="material-value">Карбон</p>
+                                <p class="characteristic-name" id="material-name">Материал</p>
                             </div>
                         </div>
                     </div>
                 </div><!--slide-1-->
-                <div class="slide" id="slide-2">
+                <div class="slide clearfix" id="slide-2">
                     <div class="slider-left">
                          <img class="slider-img" src="img/slide-2.png" width="345" height="485" alt="Фитнесс-браслеты">
                     </div>
@@ -109,13 +115,13 @@
                         </div>
                         <div class="product-info">
                             <div class="characteristic">
-                                <p class="characteristic-value" id="value-Length">48 часов</p>
-                                <p class="characteristic-name" id="name-Length">Без подзарядки</p>
+                                <p class="characteristic-value" id="charging-value">48 часов</p>
+                                <p class="characteristic-name" id="charging-name">Без подзарядки</p>
                             </div>
                         </div>
                     </div>
                 </div><!--slide-2-->
-                <div class="slide" id="slide-3">
+                <div class="slide clearfix" id="slide-3">
                     <div class="slider-left">
                          <img class="slider-img" src="img/slide-3.3.png" width="535" height="500" alt="Селфи Палка">
                     </div>
@@ -135,12 +141,12 @@
                         </div>
                         <div class="product-info">
                             <div class="characteristic">
-                                <p class="characteristic-value" id="value-Length">800 м</p>
-                                <p class="characteristic-name" id="name-Length">Дальность полета</p>
+                                <p class="characteristic-value" id="range-fly-value">800 м</p>
+                                <p class="characteristic-name" id="range-fly-name">Дальность полета</p>
                             </div>
                             <div class="characteristic">
-                                <p class="characteristic-value" id="value-weight">50 м</p>
-                                <p class="characteristic-name" id="name-weight">Радиус поражения</p>
+                                <p class="characteristic-value" id="attack-range-value">50 м</p>
+                                <p class="characteristic-name" id="attack-range-name">Радиус поражения</p>
                             </div>
                         </div>
                     </div>
@@ -211,23 +217,23 @@
                        
                         <div class="btn-container1">
                             <label for="service-btn-1">
-                                <div class="btn-slider-tab btn">
+                                <span class="btn-slider-tab btn">
                                     Доставка
-                                </div>
+                                </span>
                             </label>
                         </div>
                         <div class="btn-container2">
                             <label for="service-btn-2">
-                                <div class="btn-slider-tab btn">
+                                <span class="btn-slider-tab btn">
                                     Гарантия
-                                </div>
+                                </span>
                             </label>
                         </div>
                         <div class="btn-container3">
                             <label for="service-btn-3">
-                                <div class="btn-slider-tab btn">
+                                <span class="btn-slider-tab btn">
                                     Кредит
-                                </div>
+                                </span>
                             </label>
                         </div>    
                     </div>
@@ -338,7 +344,7 @@
           <div class="footer-bottom container clearfix">
             	<div class="footer-decorative-left">
             	</div>  
-	            <div class="social">
+	            <div class="social clearfixf">
 	                <a href="http://facebook.com">
                         <div class="facebook social-icon"></div>
 	                </a>
@@ -354,5 +360,72 @@
                 </a>
 	        </div>
       </footer>
+        <div class="shadow-block"></div>
+        <form class="popup-write-us" action="#" method="post"> 
+            <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+            <label class="popup-your-name">
+                <span>Ваше имя:</span>
+                <input type="text" name="Your-name" id="your-name" placeholder="Представьтесь пожалуйста">
+            </label>
+            <label class="popup-your-e-mail">
+                <span>Ваше e-mail:</span>
+                <input type="text" name="Your-e-mail" id="your-e-mail" placeholder="Для отправки ответа">
+            </label>
+            <label class="popup-text-letter">
+                <span>Текст письма:</span>
+                <textarea rows="10" name="text-letter" id="text-letter" placeholder="В свободной форме"></textarea>
+            </label>
+            <div class="btn-form-submit">
+                <button class="btn btn-form" type="Submit">Отправить</button>
+            </div>
+        </form>
+        <div class="modal-map">
+            <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=wK08HLaeyoLsd59z8zO6gf6OUq_rRsgZ&amp;width=960&amp;height=560&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+        </div>
+        <script>
+            var write_us = document.querySelector(".info-contact .btn-info");
+            var map = document.querySelector(".info-map");
+            var modal_map = document.querySelector(".modal-map");
+            var popup_shedow = document.querySelector(".shadow-block");
+            var popup = document.querySelector(".popup-write-us");
+            
+            var close = popup.querySelector(".modal-content-close");
+            var close_map = modal_map.querySelector(".modal-content-close");
+            
+            var search = document.querySelector(".header-search input[type='text']");
+            var search_btn = document.querySelector(".header-search input[type='submit']");
+            
+            search.addEventListener("focus", function(event) {
+                search_btn.classList.remove("search-btn");
+            })
+            search.addEventListener("blur", function(event) {
+                search_btn.classList.add("search-btn");
+            })
+            
+            write_us.addEventListener("click", function(event) {
+                event.preventDefault();
+                popup_shedow.classList.add("modal-content-show");
+                popup.classList.add("modal-content-show");
+            });
+            
+            close.addEventListener("click", function(event) {
+                event.preventDefault();
+                popup_shedow.classList.remove("modal-content-show");
+                popup.classList.remove("modal-content-show");
+                modal_map.classList.remove("modal-content-show");
+            })
+            
+            close_map.addEventListener("click", function(event) {
+                event.preventDefault();
+                modal_map.classList.remove("modal-content-show");
+            })
+            
+            map.addEventListener("click", function(event) {
+                event.preventDefault();
+                modal_map.classList.add("modal-content-show");
+            })
+       </script>
+      
   </body>
 </html>

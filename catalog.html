@@ -16,18 +16,24 @@
 	    		  <div class="header-search" id="search">
                       <form action="#" method="get">
                           <input type="text" name="search-text" placeholder="Поиск по сайту">
-                          <input type="submit" name="search-btn" value="Найти">
+                          <input class="search-btn" type="submit" name="search-btn" value="Найти">
                       </form>
                   </div>
                   <nav class="main-menu">
                       <a class="catalog-menu" href="#">Каталог товаров</a>
-                      <ul class="menu-secondary" id="catalog-menu">
-                          <li><a href="#">Виртуальная реальность</a></li>
-                          <li><a href="#">Фитнес браслеты</a></li>
-                          <li><a href="#">Квадракоптеры</a></li>
-                          <li><a href="#">Моноподы для селфи</a></li>
-                          <li><a href="#">Умные часы</a></li>
-                          <li><a href="#">Экшн-камеры</a></li>
+                      <ul class="menu-secondary">
+                          <span class="catalog-column1">
+                              <li><a href="#">Виртуальная реальность</a></li>
+                              <li><a href="#">Моноподы для селфи</a></li>
+                              <li><a href="#">Экшн-камеры</a></li>
+                          </span>
+                          <span class="catalog-column2">
+                              <li><a href="#">Фитнес браслеты</a></li>
+                              <li><a href="#">Умные часы</a></li>
+                          </span>
+                          <span class="catalog-column3">
+                              <li><a href="#">Квадракоптеры</a></li>
+                          </span>
                       </ul>
                   </nav>
               </div>
@@ -63,9 +69,7 @@
                   <div class="breadcrumbs clearfix">
                       <ul>
                           <li><a href="#">Главная</a></li>
-                          <li><div class="delimetr"></div></li>
                           <li><a href="#">Каталог товаров</a></li>
-                          <li><div class="delimetr"></div></li>
                           <li><a href="#">Монопады для селфи</a></li>
                       </ul>
                   </div>
@@ -73,9 +77,9 @@
           </div>
           <div class="catalog-wraper">
               <div class="catalog-row">
-                  <div class="catalog-container container">
+                  <div class="catalog-container container clearfix">
                       <div class="catalog-row-left">
-                          <p>Фильтр:</h2>
+                          <p>Фильтр:</p>
                       </div>
                       <div class="catalog-column-right">
                           <div class="list-top clearfix">
@@ -101,48 +105,65 @@
         <!--Настройки фильтров-->
               <div class="catalog content clearfix">
                   <div class="catalog-filter catalog-column-left">
-                          <form class="catalog-form" action="#" method="post">
-                              <div class="filter-cost" id="cost-settings">
-                                  <h3>Стоимость</h3>
-                                  <input type="range" min="0" max="8000" step="500" value="5000" id="cost">
-                              </div>
-                              <div class="filter-color" id="color-settings">
-                                  <h3>Цвет</h3>
-                                  <ul>
-                                      <li>
-                                          <label class="square-chekbox"><input type="checkbox" id="color-Black" value="black" checked>Черный</label>
-                                      </li>
-                                      <li>
-                                          <label class="square-chekbox"><input type="checkbox" id="color-white" value="white">Белый</label>
-                                      </li>
-                                      <li>
-                                          <label class="square-chekbox"><input type="checkbox" id="color-blue" value="blue" checked>Синий</label>
-                                      </li>
-                                      <li>
-                                          <label class="square-chekbox"><input type="checkbox" id="color-red" value="red" checked>Красный</label>
-                                      </li>
-                                      <li>
-                                          <label class="square-chekbox"><input type="checkbox" id="color-pink" value="pink">Розовый</label>
-                                      </li>
-                                  </ul>
-                              </div><!--filter-color-->
-                              <div class="filter-bluetooth">
-                                  <h3>Bluetooth</h3>
-                                  <ul>
-                                      <li>
-                                          <label><input type="radio" id="Bluetooth-yes" name="bluetooth" value="yes">Есть</label>
-                                      </li>
-                                      <li>
-                                          <label><input type="radio" id="Bluetooth-no" name="bluetooth" value="no">Нет</label>
-                                      </li>
-                                  </ul>
-                              </div><!--filter-bluetooth-->
-                              <a href="#">
-                                  <div class="btn-form-submit">
-                                     <button class="btn btn-form" type="Submit">Показать</button>
+                      <form class="catalog-form" action="#" method="post">
+                          <div class="filter-cost">
+                              <h3>Стоимость</h3>
+                              <div class="filter-range">
+                                  <div class="range-controls">
+                                      <div class="scale">
+                                          <div class="bar"></div>
+                                      </div>
+                                      <div class="toggle toggle-min"></div>
+                                      <div class="toggle toggle-max"></div>
                                   </div>
-                              </a>
-                          </form>
+                                  <div class="price-controls">
+                                      <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                                      <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="filter-color">
+                              <h3>Цвет</h3>
+                              <ul>
+                                  <li>
+                                      <input type="checkbox" id="color-Black" name="color-chek" value="black" checked>
+                                      <label for="color-Black">Черный</label>
+                                  </li>
+                                  <li>
+                                      <input type="checkbox" id="color-white" name="color-chek" value="white">
+                                      <label for="color-white">Белый</label>
+                                  </li>
+                                  <li>
+                                      <input type="checkbox" id="color-blue" name="color-chek" value="blue" checked>
+                                      <label for="color-blue">Синий</label>
+                                  </li>
+                                  <li>
+                                      <input type="checkbox" id="color-red" name="color-chek" value="red" checked>
+                                      <label for="color-red">Красный</label>
+                                  </li>
+                                  <li>
+                                      <input type="checkbox" id="color-pink" name="color-chek" value="pink">
+                                      <label for="color-pink">Розовый</label>
+                                  </li>
+                              </ul>
+                          </div><!--filter-color-->
+                          <div class="filter-bluetooth">
+                              <h3>Bluetooth</h3>
+                              <ul>
+                                  <li>
+                                      <input type="radio" id="bluetooth-yes" name="bluetooth" value="yes">
+                                      <label for="bluetooth-yes">Есть</label>
+                                  </li>
+                                  <li>
+                                      <input type="radio" id="bluetooth-no" name="bluetooth" value="no">
+                                      <label for="bluetooth-no">Нет</label>
+                                  </li>
+                              </ul>
+                          </div><!--filter-bluetooth-->
+                          <div class="btn-form-submit">
+                              <button class="btn btn-form" type="Submit">Показать</button>
+                          </div>
+                      </form>
                   </div><!--catalog-column-left-->
 
                 <!--товары-->
@@ -277,5 +298,16 @@
                 </a>
 	        </div>
       </footer>
+      <script>
+            var search = document.querySelector(".header-search input[type='text']");
+            var search_btn = document.querySelector(".header-search input[type='submit']");
+            
+            search.addEventListener("focus", function(event) {
+                search_btn.classList.remove("search-btn");
+            })
+            search.addEventListener("blur", function(event) {
+                search_btn.classList.add("search-btn");
+            })
+       </script>
   </body>
 </html>
