@@ -34,6 +34,11 @@ h1 {
     letter-spacing: -1px;
 }
 
+.site-map h1 {
+    margin-top: 35px;
+    margin-bottom: 23px;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -133,7 +138,7 @@ a {
     padding-left: 60px;
     font-family: "Open Sans Light", "Arial", sans-serif;
     font-size: 15px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     text-transform: none;
     background-color: #f7e296;
 }
@@ -142,25 +147,25 @@ a {
     width: 200px;
     float: left;
     margin-right: 40px;
-    padding: 0px;
+    padding: 0;
 }
 
 .catalog-column2 {
     width: 160px;
     float: left;
     margin-right: 40px;
-    padding: 0px;
+    padding: 0;
 }
 
 .catalog-column3 {
     width: 160px;
     float: left;
     margin-right: 40px;
-    padding: 0px;
+    padding: 0;
 }
 
 .menu-secondary ul {
-    margin: 0px;
+    margin: 0;
 }
 
 .menu-secondary li {
@@ -273,8 +278,8 @@ a {
 }
 
 .header-right .main-menu ul {
-    padding-left: 0px;
-    margin: 0px;
+    padding-left: 0;
+    margin: 0;
 }
 
 .main-menu ul,
@@ -297,7 +302,6 @@ a {
 .parametr li,
 .sorting li {
     display: inline-block;
-    float: left;
 }
 
 .main-menu ul>li, 
@@ -308,7 +312,7 @@ a {
 
 .main-menu>ul>li:last-child {
     float: right;
-    margin: 0px
+    margin: 0;
 }
 
 .breadcrumbs {
@@ -318,8 +322,8 @@ a {
 
 .breadcrumbs ul,
 .sorting ul {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .parametr li {
@@ -372,8 +376,8 @@ a {
 
 .slider::before {
     position: absolute;
-    left: 0px;
-    right: 0px;
+    left: 0;
+    right: 0;
     content: "";
     width: 1160px;
     height: 115px;
@@ -396,7 +400,7 @@ a {
 .number-slide {
     position: absolute;
     top: -8px;
-    left: 0px;
+    left: 0;
     right: 60px;
     height: 179.2px;
     z-index: -1;
@@ -408,7 +412,7 @@ a {
 }
 
 .number-slide p {
-    margin: 0px;
+    margin: 0;
     margin-right: 2px;
     text-align: right;
     font-family: Gilroy ExtraBold, Arial, sans-serif;
@@ -422,7 +426,7 @@ a {
     height: 7px;
     content: "";
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 50px;
     background-color: #ffffff;
 }
@@ -446,7 +450,6 @@ a {
     margin: 0;
     font-size: 47px;
     font-family: Gilroy ExtraBold, Arial, sans-serif;
-/*    margin-bottom: 35px;*/
     font-weight: normal;
 }
 
@@ -507,19 +510,19 @@ a {
 .characteristic {
     display: inline-block;
     float: left;
-    font-size: 0px;
+    font-size: 0;
     margin-right: 75px;
 }
 
 .char3 {
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 .characteristic-value {
     font-size: 36px;
     font-family: Gilroy Light, Arial, sans-serif;
     margin-bottom: 15px;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 p .characteristic-value {
@@ -529,7 +532,7 @@ p .characteristic-value {
 .characteristic-name {
     font-size: 13px;
     font-family: Open Sans Light, Arial, sans-serif;
-    margin: 0px;
+    margin: 0;
 }
 
 .slide {
@@ -704,7 +707,7 @@ p .characteristic-value {
 
 .logotypes {
     width: 1165px;
-	font-size: 0px;
+	font-size: 0;
 	margin-bottom: 140px;
 }
 
@@ -761,7 +764,7 @@ p .characteristic-value {
 }
 
 .logotypes img:nth-child(4) {
-	margin-right: 0px;
+	margin-right: 0;
 }
 
 .info {
@@ -802,7 +805,7 @@ p .characteristic-value {
 .info-about-us li {
     font-family: Gilroy ExtraBold, Arial, sans-serif;
     font-size: 16px;
-    margin: 0px;
+    margin: 0;
     margin-bottom: 20px;
     padding-left: 10px;
     position: relative;
@@ -870,7 +873,6 @@ p .characteristic-value {
 .footer ul {
     margin-top: 0;
     margin-bottom: 0;
-/*    padding; 0;*/
 }
 
 .footer-top {
@@ -977,11 +979,11 @@ p .characteristic-value {
 
 .nav-footer ul {
     display: inline-block;
-    padding: 0px;
+    padding: 0;
 }
 
 .nav-footer li:last-child {
-    margin-right: 0px;
+    margin-right: 0;
 }
 .header-right-top {
     margin-bottom: 45px;
@@ -1091,7 +1093,7 @@ p .characteristic-value {
 	float: left;
 	width: 270px;
 	padding-left: 73px;
-	margin-right: 70px;
+	margin-right: 80px;
 }
 
 .catalog-row-left {
@@ -1111,7 +1113,7 @@ p .characteristic-value {
     text-transform: uppercase;
     font-weight: normal;
     line-height: 70px;
-    margin: 0px;
+    margin: 0;
     width: 160px;
 }
 
@@ -1119,8 +1121,8 @@ p .characteristic-value {
     background-color: #efefef;
     padding-top: 69px;
     position: absolute;
-    top: 0px;
-    bottom: 0px;
+    top: 0;
+    bottom: 0;
 }
 
 .catalog-column-right {
@@ -1153,13 +1155,12 @@ p .characteristic-value {
     font-family: Gilroy ExtraBold, Arial, sans-serif;
     font-size: 18px;
     font-weight: normal;
-    margin-top: 12px; 
-    margin-bottom: 30px;
+    margin-top: 12px;
 }
 
 .catalog ul {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -1170,6 +1171,10 @@ p .characteristic-value {
 .filter-cost {
     border-top: 2px solid #000000;
     margin-bottom: 35px;
+}
+
+.filter-cost h3 {
+    margin-bottom: 37px;
 }
 
 .filter-range {
@@ -1224,6 +1229,10 @@ p .characteristic-value {
     margin-bottom: 40px;
 }
 
+.filter-color h3 {
+    margin-bottom: 25px;
+}
+
 .catalog-form input[type="checkbox"],
 .catalog-form input[type="radio"] {
     display: none;
@@ -1257,13 +1266,17 @@ p .characteristic-value {
     margin-bottom: 40px;
 }
 
+.filter-bluetooth h3 {
+    margin-bottom: 30px;
+}
+
 .filter-bluetooth label::before {
     position: absolute;
     content: "";
     left: 0;
     top: -3.5px;
-    width: 23px;
-    height: 23px;
+    width: 20px;
+    height: 20px;
     border: 2px solid #dbdbdb;
     border-radius: 50%;
 }
@@ -1271,7 +1284,7 @@ p .characteristic-value {
 .filter-bluetooth input[type="radio"]:checked ~ label::before {
     background-image: url("../img/markers.png");
     background-repeat: no-repeat;
-    background-position: -23px -1px;
+    background-position: -24px -3px;
 }
 
 .btn-form-submit {
@@ -1304,9 +1317,14 @@ p .characteristic-value {
 
 .sorting {
 	float: right;
-	width: 60px;
+	width: 63px;
     margin-right: 20px;
     padding-top: 25px;
+}
+
+.sorting a:active,
+.sorting .current {
+    opacity: 1;
 }
 
 .sorting a {
@@ -1317,13 +1335,8 @@ p .characteristic-value {
     opacity: 0.4;
 }
 
-.sorting a:active {
-    opacity: 1;
-}
-
 .list-item {
 	display: inline-block;
-	float: left;
     position: relative;
     margin-bottom: 50px;
 }
@@ -1336,9 +1349,9 @@ p .characteristic-value {
     position: absolute;
     opacity: 0;
     height: 380px;
-    top: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
     color: black;
     z-index: 1;
 }
@@ -1415,7 +1428,7 @@ p .characteristic-value {
 	background-color: #ebebeb;
     width: 760px;
     height: 70px;
-    margin-bottom: 70px;
+    margin-bottom: 65px;
     font-family: "Gilroy ExtraBold", "Arial", sans-serif;
     font-size: 18px;
     text-transform: uppercase;
@@ -1430,7 +1443,7 @@ p .characteristic-value {
 .description-name {
     float: left;
     width: 260px;
-    margin: 0px;
+    margin: 0;
     font-family: "Gilroy ExtraBold", "Arial", sans-serif;
     font-size: 18px;
 }
@@ -1438,7 +1451,7 @@ p .characteristic-value {
 .description-price {
     float: right;
     font-family: "Gilroy Light", "Arial", sans-serif;
-    margin: 0px;
+    margin: 0;
 } 
 
 .list-previous {
@@ -1485,7 +1498,7 @@ p .characteristic-value {
 }
 
 .list-page a:last-child {
-    margin: 0px;
+    margin: 0;
 }
 
 .list-page .current,
@@ -1636,7 +1649,7 @@ p .characteristic-value {
     transform: translate(-50%, -50%);
     width: 960px;
     height: 435px;
-    box-shadow: 0 20px 40px 0px rgba(4, 6, 6, 0.75);
+    box-shadow: 0 20px 40px 0 rgba(4, 6, 6, 0.75);
     background-color: #fff;
 }
 
