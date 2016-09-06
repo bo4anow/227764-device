@@ -144,7 +144,7 @@ a {
 }
 
 .catalog-column1 {
-    width: 200px;
+    width: 220px;
     float: left;
     margin-right: 40px;
     padding: 0;
@@ -1553,7 +1553,7 @@ p .characteristic-value {
     transform: translate(-50%, -50%);
     padding: 90px 100px;
     width: 760px;
-    height: 365px;
+    min-height: 365px;
     background-color: #ffffff;
     box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
     z-index: 1;
