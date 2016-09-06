@@ -831,6 +831,7 @@ p .characteristic-value {
     position: relative;
     width: 260px;
     text-align: center;
+    cursor: pointer;
 }
 
 .btn-info:hover {
