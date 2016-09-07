@@ -1,5 +1,3 @@
-/***********Index**************/
-
 var write_us = document.querySelector(".info-contact .btn-info");
 var map = document.querySelector(".info-map");
 var modal_map = document.querySelector(".modal-map");

@@ -331,11 +331,11 @@ a {
 }
 
 .parametr li {
-    margin-right: 30px;
+    margin-right: 25px;
 }
 
 .sorting li:first-child {
-    margin-right: 25px;
+    margin-right: 20px;
 }
 
 .breadcrumbs li {
@@ -1172,7 +1172,7 @@ p .characteristic-value {
 
 .filter-cost {
     border-top: 2px solid #000000;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .filter-cost h3 {
@@ -1228,7 +1228,7 @@ p .characteristic-value {
 
 .filter-color {
     border-top: 2px solid #000000;
-    margin-bottom: 40px;
+    margin-bottom: 44px;
 }
 
 .filter-color h3 {
@@ -1303,7 +1303,7 @@ p .characteristic-value {
 .parametr {
     float: left;
     width: 500px;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .parametr a {
@@ -1319,8 +1319,8 @@ p .characteristic-value {
 .sorting {
     float: right;
     width: 63px;
-    margin-right: 20px;
-    padding-top: 25px;
+    margin-right: 15px;
+    padding-top: 20px;
 }
 
 .sorting a:active,
@@ -1340,7 +1340,7 @@ p .characteristic-value {
     display: inline-block;
     vertical-align: top;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
 }
 
 .list-item>img {
@@ -1429,7 +1429,8 @@ p .characteristic-value {
     background-color: #ebebeb;
     width: 760px;
     height: 70px;
-    margin-bottom: 65px;
+    margin-top: -13px;
+    margin-bottom: 75px;
     font-family: "Gilroy ExtraBold", "Arial", sans-serif;
     font-size: 18px;
     text-transform: uppercase;

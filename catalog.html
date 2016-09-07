@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/normalize.css">
-        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
         <title>HTML Academy: Девайс</title>
     </head>
     <body>
@@ -189,7 +189,7 @@
                                     <a class="add-compare" href="#">Добавить к сравнению</a>
                                 </div>
                                 <div class="list-item-description">
-                                    <a class="description-name" href="#">Профессиональная селфи-палка</a>
+                                    <a class="description-name" href="#">Профессиональная<br>селфи-палка</a>
                                     <p class="description-price">1 500 руб.</p>
                                 </div>
                             </div>
@@ -288,16 +288,6 @@
                 </a>
             </div>
         </footer>
-        <script>
-            var search = document.querySelector(".header-search input[type='text']");
-            var search_btn = document.querySelector(".header-search input[type='submit']");
-            
-            search.addEventListener("focus", function(event) {
-                search_btn.classList.remove("search-btn");
-            })
-            search.addEventListener("blur", function(event) {
-                search_btn.classList.add("search-btn");
-            })
-        </script>
+        <script src="js/scripts-catalog-minimize.js"></script>
     </body>
 </html>
