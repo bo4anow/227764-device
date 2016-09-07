@@ -1,36 +1,38 @@
 @font-face {
-	font-family: 'Open Sans'; 
-	src: local("OpenSans"),
-	url("../fonts/opensans.woff");
-} 
+    font-family: 'Open Sans';
+    src: local("OpenSans"),
+        url("../fonts/opensans.woff");
+}
+
 @font-face {
-	font-family: 'Open Sans light'; 
-	src: local("Open Sans light"),
-	url("../fonts/opensanslight.woff");
+    font-family: 'Open Sans light';
+    src: local("Open Sans light"),
+        url("../fonts/opensanslight.woff");
 } 
+
 @font-face {
-	font-family: 'Gilroy Light'; 
-	src: local("Gilroy Light"),
-	url("../fonts/gilroylight.woff");
+    font-family: 'Gilroy Light';
+    src: local("Gilroy Light"),
+        url("../fonts/gilroylight.woff");
 } 
+
 @font-face {
-	font-family: 'Gilroy ExtraBold'; 
-	src: local("Gilroy ExtraBold"),
-		url("../fonts/gilroyextrabold.woff");
+    font-family: 'Gilroy ExtraBold';
+    src: local("Gilroy ExtraBold"),
+        url("../fonts/gilroyextrabold.woff");
 } 
 
 body {
-	color: #464646;
-	font-size: 15px;
-	font-style: normal;
-	font-family: Open Sans light, Tahoma, Sans;
-	
+    color: #464646;
+    font-size: 15px;
+    font-style: normal;
+    font-family: Open Sans light, Tahoma, Sans;
 }
 
 h1 {
-	color: black;
-	font-size: 45px;
-	font-family: Gilroy Extra bold, Tahoma, Sans;
+    color: black;
+    font-size: 45px;
+    font-family: Gilroy Extra bold, Tahoma, Sans;
     letter-spacing: -1px;
 }
 
@@ -45,9 +47,9 @@ a {
 }
 
 .clearfix::after {
-	content: "";
-	display: table;
-	clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .header-logo {
@@ -60,26 +62,27 @@ a {
     font-size: 48px;
     color: #000;
 }
+
 .header-logo a {
-     color: #000;
+    color: #000;
 }
 
 .container {
-	width: 1200px;
-	margin-left: auto;
-	margin-right: auto;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header {
     font-family: Open Sans light, Arial, sans-serif;
-	width: 1040px;
-	height: 185px;
-	padding-left: 60px;
-	padding-right: 60px;
-	background-color: #f7e296;
-	margin-top: -30px;
-	margin-left: auto;
-	margin-right: auto;
+    width: 1040px;
+    height: 185px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #f7e296;
+    margin-top: -30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header-search {
@@ -173,10 +176,10 @@ a {
 }
 
 .header-left {
-	width: 500px;
-	float: left;
-	margin-right: 20px;
-	margin-top: 25px;
+    width: 500px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 25px;
 }
 
 .header-search {
@@ -184,14 +187,14 @@ a {
 }
 
 .header-right {
-	width: 500px;
-	float: right;
-	margin-top: 50px;
+    width: 500px;
+    float: right;
+    margin-top: 50px;
 }
 
 .user-block {
-	width: 260px;
-	float: left;
+    width: 260px;
+    float: left;
 }
 
 .user-out {
@@ -214,13 +217,12 @@ a {
 }
 
 .report {
-	float: right;
-	width: 215px;
+    float: right;
+    width: 215px;
 }
 
-
 .compare {
-	float: left;
+    float: left;
 }
 
 .compare::before {
@@ -235,7 +237,7 @@ a {
 }
 
 .basket {
-	float: right;
+    float: right;
     width: 85px;
 }
 
@@ -261,6 +263,7 @@ a {
 
 .catalog-menu::after {
     display: inline-block;
+    vertical-align: top;
     width: 16px;
     height: 16px;
     content: "";
@@ -302,15 +305,16 @@ a {
 .parametr li,
 .sorting li {
     display: inline-block;
+    vertical-align: top;
 }
 
-.main-menu ul>li, 
+.main-menu-right li, 
 .nav-footer li {
     margin-right: 30px;
     vertical-align: top;
 }
 
-.main-menu>ul>li:last-child {
+.main-menu-right li:last-child {
     float: right;
     margin: 0;
 }
@@ -361,14 +365,14 @@ a {
 }
 
 .content {
-	width: 1190px;
-	margin-left: auto;
-	margin-right: auto;
+    width: 1190px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 5px;
 }
 
 .slider {
-	margin-bottom: 95px;
+    margin-bottom: 95px;
     height: 500px;
     color:black;
     position: relative;
@@ -432,8 +436,8 @@ a {
 }
 
 .product-about {
-	float: right;
-	width: 580px;
+    float: right;
+    width: 580px;
     position: relative;
     padding-top: 82px;
 }
@@ -455,12 +459,11 @@ a {
 
 .btn-slider {
     width: 220px;
-    height: 40px;  
+    height: 40px;
     position: relative;
     text-align: center;
     margin-bottom: 50px;
     margin-left: 3px;
-
 }
 
 .btn {
@@ -509,6 +512,7 @@ a {
 
 .characteristic {
     display: inline-block;
+    vertical-align: top;
     float: left;
     font-size: 0;
     margin-right: 75px;
@@ -541,33 +545,30 @@ p .characteristic-value {
 
 .slider > input[type="radio"],
 .service-slider > input[type="radio"]{
-  display: none;
+    display: none;
     position: absolute;
 }
 
 .slider-controls {
-  position: absolute;
-  bottom: 159px;
-  right: 82px;
-  width: 100px;
-  z-index: 1;
-  font-size: 0;
-    
+    position: absolute;
+    bottom: 159px;
+    right: 82px;
+    width: 100px;
+    z-index: 1;
+    font-size: 0;
 }
 
 .slider-controls label {
-  display: inline-block;
-  width: 4px;
-  height: 4px;
-  margin-right: 23px;
-
-  vertical-align: top;
-
-  background-color: transparent;
-  border: 3px solid #000000;
-  opacity: 0.3;
-  border-radius: 50%;
-  cursor: pointer;
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin-right: 23px;
+    vertical-align: top;
+    background-color: transparent;
+    border: 3px solid #000000;
+    opacity: 0.3;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 #btn-1:checked ~ #slide-1,
@@ -583,34 +584,34 @@ p .characteristic-value {
 }
 
 .popular {
-	margin-bottom: 70px;
+    margin-bottom: 70px;
     padding-left: 30px;
     font-size: 18px;
     font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 }
 
 .popular-item {
-	float: left;
-	width: 160px;
-	margin-right: 40px;
+    float: left;
+    width: 160px;
+    margin-right: 40px;
 }
 
 .popular-item:last-child {
-	float: right;
-	margin-right: 30px;
+    float: right;
+    margin-right: 30px;
 }
 
-
 .popular-img {
-	width: 160px;
-	height: 160px;
-	background-color: #f7e296;
+    width: 160px;
+    height: 160px;
+    background-color: #f7e296;
     margin-bottom: 32px;
 }
 
 .popular-img:hover {
     background-color: #f0c52e;
 }
+
 .popular-item a:active,
 .popular-item img:active {
     opacity: 0.3;
@@ -618,15 +619,15 @@ p .characteristic-value {
 }
 
 .service-slider {
-	width: 1160px;
+    width: 1160px;
 }
 
 .service-slider-tab {
-	float: left;
-	height: 240px;
-	width: 273px;
-	margin-right: 112px;
-	border-right: 7px solid #000;
+    float: left;
+    height: 240px;
+    width: 273px;
+    margin-right: 112px;
+    border-right: 7px solid #000;
     padding-top: 80px;
 }
 
@@ -674,8 +675,8 @@ p .characteristic-value {
 }
 
 .servise-slide {
-	float: right;
-	width: 760px;
+    float: right;
+    width: 760px;
     margin-top: 83px;
 }
 
@@ -695,11 +696,11 @@ p .characteristic-value {
 }
 
 .decorat-block {
-	background-color: #e5e5e5;
-	width: 100%;
+    background-color: #e5e5e5;
+    width: 100%;
     min-width: 1200px;
-	height: 287px;
-	margin-top: -220px;
+    height: 287px;
+    margin-top: -220px;
     margin-bottom: 95px;
     position: relative;
     z-index: -2;
@@ -707,8 +708,8 @@ p .characteristic-value {
 
 .logotypes {
     width: 1165px;
-	font-size: 0;
-	margin-bottom: 140px;
+    font-size: 0;
+    margin-bottom: 140px;
 }
 
 .logo-djl {
@@ -741,7 +742,6 @@ p .characteristic-value {
     height: 100px;
     background: url("../img/logo-gopro.jpg") no-repeat;
     margin-right: 40px;
-    
 }
 
 .logo-gopro:hover {
@@ -760,27 +760,27 @@ p .characteristic-value {
 }
 
 .logotypes img {
-	margin-right: 40px;
+    margin-right: 40px;
 }
 
 .logotypes img:nth-child(4) {
-	margin-right: 0;
+    margin-right: 0;
 }
 
 .info {
     width: 1160px;
-	margin-bottom: 80px;
+    margin-bottom: 80px;
 }
 
 .info-about-us {
-	float: left;
-	width: 470px;
-	margin-right: 40px;
+    float: left;
+    width: 470px;
+    margin-right: 40px;
     position: relative;
 }
 
 .info-about-us::before {
-	width: 80px;
+    width: 80px;
     height: 7px;
     content: "";
     position: absolute;
@@ -839,13 +839,13 @@ p .characteristic-value {
 }
 
 .info-contact {
-	float: right;
-	width: 560px;
+    float: right;
+    width: 560px;
     position: relative;
 }
 
 .info-contact:before {
-	width: 80px;
+    width: 80px;
     height: 7px;
     content: "";
     position: absolute;
@@ -860,8 +860,8 @@ p .characteristic-value {
 }
 
 .footer {
-	background-color: #464646;
-	color: #fff;
+    background-color: #464646;
+    color: #fff;
     min-width: 1200px;
     padding: 0 5px;
 }
@@ -914,6 +914,7 @@ p .characteristic-value {
 .footer-basket {
     float: right;
 }
+
 .footer-basket:before {
     float: left;
     content: "";
@@ -936,9 +937,9 @@ p .characteristic-value {
 
 .footer-logo {
     float: left;
-	color: #f7e184;
+    color: #f7e184;
     font-family: Gilroy ExtraBold, sans-serif;
-	font-size: 48px; 
+    font-size: 48px;
     padding-left: 16px;
 }
 
@@ -952,7 +953,7 @@ p .characteristic-value {
 }
 
 .footer-right {
-	float: right;
+    float: right;
     padding: 15px 20px;
 }
 
@@ -963,13 +964,14 @@ p .characteristic-value {
 }
 
 .footer-adress {
-	float: left;
-	width: 260px;
-	margin-right: 25px;
+    float: left;
+    width: 260px;
+    margin-right: 25px;
 }
 
 .nav-footer {
     display: inline-block;
+    vertical-align: top;
     font-family: Gilroy ExtraBold, Arial, sans-serif;
     font-size: 18px;
     text-transform: uppercase;
@@ -980,6 +982,7 @@ p .characteristic-value {
 
 .nav-footer ul {
     display: inline-block;
+    vertical-align: top;
     padding: 0;
 }
 
@@ -1005,22 +1008,22 @@ p .characteristic-value {
 }
 
 .footer-telephone {
-	float: right;
-	text-align: right;
-	width: 260px;
+    float: right;
+    text-align: right;
+    width: 260px;
 }
 
 .footer-decorative-left {
-	float: left;
+    float: left;
     margin-top: 13px;
     margin-left: 18px;
-	width: 80px;
-	height: 7px;
-	background-color: #f7e184;
+    width: 80px;
+    height: 7px;
+    background-color: #f7e184;
 }
 
 .social {
-	width: 147px;
+    width: 147px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1040,7 +1043,6 @@ p .characteristic-value {
     background: url("../img/social-icon.png");
     margin-right: 15px;
 }
-
 
 .insta {
     width: 39px;
@@ -1068,10 +1070,10 @@ p .characteristic-value {
 }
 
 .htmlacademy-logo {
-	float: right;
+    float: right;
     margin-right: 20px;
     height: 34px;
-	width: 27px;
+    width: 27px;
     background: url("../img/htmlacademy.png") no-repeat;
 }
 
@@ -1085,25 +1087,25 @@ p .characteristic-value {
 }
 
 .align-container {
-	width: 1040px;
-	margin-left: auto;
-	margin-right: auto;
+    width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .catalog-column-left {
-	float: left;
-	width: 270px;
-	padding-left: 73px;
-	margin-right: 80px;
+    float: left;
+    width: 270px;
+    padding-left: 73px;
+    margin-right: 80px;
 }
 
 .catalog-row-left {
     background-color: #dcdcdc;
-	float: left;
-	width: 268px;
+    float: left;
+    width: 268px;
     height: 70px;
-	padding-left: 80px;
-	margin-right: 70px;
+    padding-left: 80px;
+    margin-right: 70px;
 }
 
 .catalog-row p {
@@ -1127,8 +1129,8 @@ p .characteristic-value {
 }
 
 .catalog-column-right {
-	float: right;
-	width: 780px;
+    float: right;
+    width: 780px;
 }
 
 .list-top {
@@ -1137,10 +1139,9 @@ p .characteristic-value {
 }
 
 .list-top h2 {
-	float: left;
-	width: 160px;
-	margin-right: 40px;
-
+    float: left;
+    width: 160px;
+    margin-right: 40px;
 }
 
 .catalog {
@@ -1152,7 +1153,7 @@ p .characteristic-value {
     position: relative;
 }
 
-.catalog form h3 {
+.catalog-form h3 {
     font-family: Gilroy ExtraBold, Arial, sans-serif;
     font-size: 18px;
     font-weight: normal;
@@ -1253,7 +1254,6 @@ p .characteristic-value {
     position: absolute;
     left: 0;
     background-color: #dbdbdb;
-   
 }
 
 .filter-color input[type="checkbox"]:checked ~ label::before {
@@ -1285,7 +1285,7 @@ p .characteristic-value {
 .filter-bluetooth input[type="radio"]:checked ~ label::before {
     background-image: url("../img/markers.png");
     background-repeat: no-repeat;
-    background-position: -24px -3px;
+    background-position: -24.49px -2.52px;
 }
 
 .btn-form-submit {
@@ -1301,8 +1301,8 @@ p .characteristic-value {
     background-color: #f0c52e;
 }
 .parametr {
-	float: left;
-	width: 500px;
+    float: left;
+    width: 500px;
     padding-top: 10px;
 }
 
@@ -1317,8 +1317,8 @@ p .characteristic-value {
 }
 
 .sorting {
-	float: right;
-	width: 63px;
+    float: right;
+    width: 63px;
     margin-right: 20px;
     padding-top: 25px;
 }
@@ -1337,7 +1337,8 @@ p .characteristic-value {
 }
 
 .list-item {
-	display: inline-block;
+    display: inline-block;
+    vertical-align: top;
     position: relative;
     margin-bottom: 50px;
 }
@@ -1378,7 +1379,6 @@ p .characteristic-value {
     text-transform: uppercase;
     z-index: 1;
 }
-
 
 .add-compare {
     position: absolute;
@@ -1422,11 +1422,11 @@ p .characteristic-value {
 }
 
 .list-item:nth-child(odd) {
-	margin-right: 40px;
+    margin-right: 40px;
 }
 
 .list-paginator {
-	background-color: #ebebeb;
+    background-color: #ebebeb;
     width: 760px;
     height: 70px;
     margin-bottom: 65px;
@@ -1453,10 +1453,10 @@ p .characteristic-value {
     float: right;
     font-family: "Gilroy Light", "Arial", sans-serif;
     margin: 0;
-} 
+}
 
 .list-previous {
-	float: left;
+    float: left;
     width: 125px;
     margin-right: 10px;
     line-height: 70px;
@@ -1464,13 +1464,14 @@ p .characteristic-value {
 
 .list-page {
     display: inline-block;
+    vertical-align: top;
     width: 490px;
     line-height: 70px;
     text-align: center;
 }
 
 .list-next {
-	float: right;
+    float: right;
     width: 135px;
     line-height: 70px;
 }
@@ -1478,6 +1479,7 @@ p .characteristic-value {
 .list-previous a,
 .list-next a {
     display: inline-block;
+    vertical-align: top;
     padding: 0 30px;
     height: 70px;
 }
@@ -1608,17 +1610,17 @@ p .characteristic-value {
 }
 
 .modal-content-close {
-  position: absolute;
-  top: 18px;
-  right: 22px;
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  font-size: 0;
-  background-color: #f7e296;
-  border: 0;
-  outline: 0;
-  cursor: pointer;
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: 0;
+    background-color: #f7e296;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
     z-index: 100;
 }
 
@@ -1635,11 +1637,11 @@ p .characteristic-value {
 }
 
 .modal-content-close::before {
-  transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .modal-content-close::after {
-  transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
 .shadow-block {
@@ -1656,4 +1658,8 @@ p .characteristic-value {
 
 .modal-content-show {
     display: block;
+}
+
+.list-item > img {
+    max-width: 360px;
 }
