@@ -218,11 +218,12 @@ a {
 
 .report {
     float: right;
-    width: 215px;
+    width: 192px;
 }
 
 .compare {
     float: left;
+    position: relative;
 }
 
 .compare::before {
@@ -231,12 +232,15 @@ a {
     width: 15px;
     height: 15px;
     background: url("../img/compare.png") no-repeat;
-    position: relative;
+    position: absolute;
     top: 6px;
-    margin-right: 7px;
+    left: -20px;
 }
 
 .basket {
+    position: relative;
+    text-align: right;
+    
     float: right;
     width: 85px;
 }
@@ -247,9 +251,9 @@ a {
     width: 15px;
     height: 15px;
     background: url("../img/cart.png") no-repeat;
-    position: relative;
+    position: absolute;
     top: 4px;
-    margin-right: 10px;
+    left: 2px;
 }
 
 .main-menu {
@@ -309,7 +313,7 @@ a {
 }
 
 .main {
-    margin-bottom: 83px;
+    margin-bottom: 81px;
 }
 
 .main-menu-right li {
@@ -527,7 +531,7 @@ a {
     vertical-align: top;
     float: left;
     font-size: 0;
-    margin-right: 75px;
+    margin-right: 77px;
 }
 
 .char3 {
@@ -597,7 +601,7 @@ p .characteristic-value {
 
 .popular {
     margin-bottom: 68px;
-    padding-left: 30px;
+    padding-left: 36px;
     font-size: 18px;
     font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 }
@@ -617,7 +621,7 @@ p .characteristic-value {
     width: 160px;
     height: 160px;
     background-color: #f7e296;
-    margin-bottom: 32px;
+    margin-bottom: 35px;
 }
 
 .popular-img:hover {
@@ -782,7 +786,6 @@ p .characteristic-value {
 
 .info {
     width: 1160px;
-    margin-bottom: 80px;
 }
 
 .info-about-us {
